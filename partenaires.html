@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Partenaires — FI2E | Carrier, CIAT, Premtech, BTD, First Plastics, FOX Cooling</title>
+<meta name="description" content="FI2E collabore avec des fabricants et partenaires internationaux de référence : Carrier, CIAT, Premtech, BTD, First Plastics, FOX Cooling.">
+<link rel="icon" type="image/png" href="assets/img/logo-fi2e.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="assets/js/tailwind-config.js"></script>
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="font-body antialiased bg-white text-navy-900 dark:bg-navy-950 dark:text-steel-100">
+
+<div id="page-loader"><div class="loader-mark"><img src="assets/img/logo-fi2e.png" alt="FI2E"></div></div>
+<div id="cursor-dot"></div><div id="cursor-ring"></div>
+
+<header>
+<nav id="site-nav" class="fixed top-0 left-0 w-full z-50 py-5">
+  <div class="max-w-7xl mx-auto px-6 lg:px-10 flex items-center justify-between">
+    <a href="index.html" class="flex items-center gap-3 group">
+      <img src="assets/img/logo-fi2e.png" alt="FI2E - Facility Integrated Engineering & Energy" class="h-14 w-auto group-hover:scale-105 transition-transform">
+    </a>
+    <ul class="hidden lg:flex items-center gap-9 text-sm font-medium text-white/90">
+      <li><a href="index.html" class="nav-link">Accueil</a></li>
+      <li><a href="entreprise.html" class="nav-link">Entreprise</a></li>
+      <li><a href="services.html" class="nav-link">Services</a></li>
+      <li><a href="expertises.html" class="nav-link">Expertises</a></li>
+      <li><a href="realisations.html" class="nav-link">Réalisations</a></li>
+      <li><a href="projets.html" class="nav-link">Projets</a></li>
+      <li><a href="partenaires.html" class="nav-link active">Partenaires</a></li>
+      <li><a href="carrieres.html" class="nav-link">Carrières</a></li>
+      <li><a href="blog.html" class="nav-link">Blog</a></li>
+      <li><a href="contact.html" class="nav-link">Contact</a></li>
+    </ul>
+    <div class="flex items-center gap-4">
+      <button data-dark-toggle class="hidden sm:flex w-9 h-9 rounded-full items-center justify-center text-white/80 hover:text-white border border-white/20 hover:border-white/40 transition-colors">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.36 6.36l-.7-.7M6.34 6.34l-.7-.7m12.02 0l-.7.7M6.34 17.66l-.7.7M12 8a4 4 0 100 8 4 4 0 000-8z"/></svg>
+      </button>
+      <a href="contact.html" class="btn-primary hidden sm:inline-flex items-center gap-2 text-white text-sm font-semibold px-5 py-3 rounded-full">
+        Demander un devis
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+      </a>
+      <button id="menu-btn" class="lg:hidden text-white w-10 h-10 flex items-center justify-center">
+        <svg id="icon-open" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        <svg id="icon-close" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+      </button>
+    </div>
+  </div>
+  <div id="mobile-menu" class="hidden lg:hidden fixed inset-0 top-0 bg-navy-950 z-40 pt-24 px-6 overflow-y-auto h-screen">
+    <ul class="flex flex-col gap-1 text-lg font-heading font-medium text-white">
+      <li><a href="index.html" class="block py-3 border-b border-white/10">Accueil</a></li>
+      <li><a href="entreprise.html" class="block py-3 border-b border-white/10">Entreprise</a></li>
+      <li><a href="services.html" class="block py-3 border-b border-white/10">Services</a></li>
+      <li><a href="expertises.html" class="block py-3 border-b border-white/10">Expertises</a></li>
+      <li><a href="realisations.html" class="block py-3 border-b border-white/10">Réalisations</a></li>
+      <li><a href="projets.html" class="block py-3 border-b border-white/10">Projets</a></li>
+      <li><a href="partenaires.html" class="block py-3 border-b border-white/10">Partenaires</a></li>
+      <li><a href="carrieres.html" class="block py-3 border-b border-white/10">Carrières</a></li>
+      <li><a href="blog.html" class="block py-3 border-b border-white/10">Blog</a></li>
+      <li><a href="contact.html" class="block py-3 border-b border-white/10">Contact</a></li>
+    </ul>
+    <a href="contact.html" class="btn-primary mt-8 inline-flex items-center justify-center gap-2 text-white text-sm font-semibold px-6 py-4 rounded-full w-full">Demander un devis</a>
+  </div>
+</nav>
+</header>
+
+<main>
+<section class="relative pt-44 pb-16 hero-bg overflow-hidden">
+  <div class="absolute inset-0 hero-grid"></div>
+  <div class="relative max-w-7xl mx-auto px-6 lg:px-10 text-center">
+    <p class="section-eyebrow text-cyan-400 font-semibold text-xs uppercase mb-4" data-aos="fade-up">Écosystème</p>
+    <h1 class="font-heading font-extrabold text-5xl lg:text-6xl text-white mb-6" data-aos="fade-up" data-aos-delay="100">Nos partenaires</h1>
+    <p class="text-steel-300 text-lg max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="200">Des alliances stratégiques avec des fabricants internationaux de référence pour garantir qualité et fiabilité.</p>
+  </div>
+</section>
+
+<!-- Partners grid -->
+<section class="py-24 bg-white dark:bg-navy-950">
+  <div class="max-w-7xl mx-auto px-6 lg:px-10">
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
+      <div class="group aspect-square rounded-2xl bg-steel-50 dark:bg-navy-900 flex items-center justify-center p-6 grayscale hover:grayscale-0 transition-all hover:shadow-premium" data-aos="zoom-in" data-aos-delay="0">
+        <span class="font-heading font-extrabold text-xl text-navy-700 dark:text-steel-300 group-hover:text-electric-600 dark:group-hover:text-cyan-400 transition-colors">CARRIER</span>
+      </div>
+      <div class="group aspect-square rounded-2xl bg-steel-50 dark:bg-navy-900 flex items-center justify-center p-6 grayscale hover:grayscale-0 transition-all hover:shadow-premium" data-aos="zoom-in" data-aos-delay="50">
+        <span class="font-heading font-extrabold text-xl text-navy-700 dark:text-steel-300 group-hover:text-electric-600 dark:group-hover:text-cyan-400 transition-colors">CIAT</span>
+      </div>
+      <div class="group aspect-square rounded-2xl bg-steel-50 dark:bg-navy-900 flex items-center justify-center p-6 grayscale hover:grayscale-0 transition-all hover:shadow-premium" data-aos="zoom-in" data-aos-delay="100">
+        <span class="font-heading font-extrabold text-xl text-navy-700 dark:text-steel-300 group-hover:text-electric-600 dark:group-hover:text-cyan-400 transition-colors">PREMTECH</span>
+      </div>
+      <div class="group aspect-square rounded-2xl bg-steel-50 dark:bg-navy-900 flex items-center justify-center p-6 grayscale hover:grayscale-0 transition-all hover:shadow-premium" data-aos="zoom-in" data-aos-delay="150">
+        <span class="font-heading font-extrabold text-xl text-navy-700 dark:text-steel-300 group-hover:text-electric-600 dark:group-hover:text-cyan-400 transition-colors">BTD</span>
+      </div>
+      <div class="group aspect-square rounded-2xl bg-steel-50 dark:bg-navy-900 flex items-center justify-center p-6 grayscale hover:grayscale-0 transition-all hover:shadow-premium" data-aos="zoom-in" data-aos-delay="200">
+        <span class="font-heading font-extrabold text-lg text-navy-700 dark:text-steel-300 group-hover:text-electric-600 dark:group-hover:text-cyan-400 transition-colors text-center">FIRST PLASTICS</span>
+      </div>
+      <div class="group aspect-square rounded-2xl bg-steel-50 dark:bg-navy-900 flex items-center justify-center p-6 grayscale hover:grayscale-0 transition-all hover:shadow-premium" data-aos="zoom-in" data-aos-delay="250">
+        <span class="font-heading font-extrabold text-lg text-navy-700 dark:text-steel-300 group-hover:text-electric-600 dark:group-hover:text-cyan-400 transition-colors text-center">FOX COOLING</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Descriptions détaillées -->
+<section class="py-24 bg-steel-50 dark:bg-navy-900">
+  <div class="max-w-7xl mx-auto px-6 lg:px-10">
+    <div class="text-center max-w-2xl mx-auto mb-14" data-aos="fade-up">
+      <p class="section-eyebrow text-electric-600 dark:text-cyan-400 font-semibold text-xs uppercase mb-4">Nos partenaires en détail</p>
+      <h2 class="font-heading font-bold text-4xl text-navy-900 dark:text-white">Des alliances industrielles à forte valeur ajoutée</h2>
+    </div>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="bg-white dark:bg-navy-800 rounded-2xl p-8 shadow-premium" data-aos="fade-up" data-aos-delay="0">
+        <h3 class="font-heading font-bold text-lg text-navy-900 dark:text-white mb-2">Carrier Global Corporation</h3>
+        <p class="text-sm text-steel-500">Multinationale américaine spécialisée dans le chauffage, la ventilation et la climatisation (CVC), ainsi que les équipements de réfrigération, de sécurité incendie et de sûreté.</p>
+      </div>
+      <div class="bg-white dark:bg-navy-800 rounded-2xl p-8 shadow-premium" data-aos="fade-up" data-aos-delay="50">
+        <h3 class="font-heading font-bold text-lg text-navy-900 dark:text-white mb-2">CIAT</h3>
+        <p class="text-sm text-steel-500">Entreprise française spécialisée dans le chauffage, la ventilation, la climatisation (CVC) et les solutions de traitement de l'air.</p>
+      </div>
+      <div class="bg-white dark:bg-navy-800 rounded-2xl p-8 shadow-premium" data-aos="fade-up" data-aos-delay="100">
+        <h3 class="font-heading font-bold text-lg text-navy-900 dark:text-white mb-2">Premtech</h3>
+        <p class="text-sm text-steel-500">Entreprise dynamique dont l'objectif principal est de fournir des services d'ingénierie, de conseil et de gestion de conception aux entreprises.</p>
+      </div>
+      <div class="bg-white dark:bg-navy-800 rounded-2xl p-8 shadow-premium" data-aos="fade-up" data-aos-delay="150">
+        <h3 class="font-heading font-bold text-lg text-navy-900 dark:text-white mb-2">BTD Ingénierie</h3>
+        <p class="text-sm text-steel-500">Bureau d'études français spécialisé dans la conception, la fourniture et l'installation de stations d'épuration pour applications domestiques et industrielles.</p>
+      </div>
+      <div class="bg-white dark:bg-navy-800 rounded-2xl p-8 shadow-premium" data-aos="fade-up" data-aos-delay="200">
+        <h3 class="font-heading font-bold text-lg text-navy-900 dark:text-white mb-2">First Plastics</h3>
+        <p class="text-sm text-steel-500">Fabricant exclusif sous licence FlowGuard CPVC au Maroc, spécialisé dans la fabrication de systèmes de tuyauterie complets pour la distribution d'eau potable, chaude, froide et glacée.</p>
+      </div>
+      <div class="bg-white dark:bg-navy-800 rounded-2xl p-8 shadow-premium" data-aos="fade-up" data-aos-delay="250">
+        <h3 class="font-heading font-bold text-lg text-navy-900 dark:text-white mb-2">FOX Cooling</h3>
+        <p class="text-sm text-steel-500">Partenaire spécialisé en solutions MEP (mécanique, électricité et plomberie), basé en Afrique.</p>
+      </div>
+      <div class="bg-white dark:bg-navy-800 rounded-2xl p-8 shadow-premium" data-aos="fade-up" data-aos-delay="300">
+        <h3 class="font-heading font-bold text-lg text-navy-900 dark:text-white mb-2">Fabricant de matériaux d'isolation</h3>
+        <p class="text-sm text-steel-500">Basé en Afrique du Sud, ce partenaire se spécialise dans la fabrication et la distribution de matériaux d'isolation thermique et électrique.</p>
+      </div>
+      <div class="bg-white dark:bg-navy-800 rounded-2xl p-8 shadow-premium" data-aos="fade-up" data-aos-delay="350">
+        <h3 class="font-heading font-bold text-lg text-navy-900 dark:text-white mb-2">Logements intelligents</h3>
+        <p class="text-sm text-steel-500">Une entreprise camerounaise spécialisée dans la construction et l'installation d'infrastructures de logements intelligents.</p>
+      </div>
+      <div class="bg-white dark:bg-navy-800 rounded-2xl p-8 shadow-premium" data-aos="fade-up" data-aos-delay="400">
+        <h3 class="font-heading font-bold text-lg text-navy-900 dark:text-white mb-2">Courants forts & faibles</h3>
+        <p class="text-sm text-steel-500">Partenaire spécialisé en courant fort, courant faible, plomberie, climatisation et sécurité incendie.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Marquee -->
+<section class="py-16 bg-navy-950 border-y border-white/5">
+  <div class="overflow-hidden">
+    <div class="marquee-track gap-16 items-center">
+      <span class="text-3xl font-heading font-bold text-white/30 px-8">CARRIER</span>
+      <span class="text-3xl font-heading font-bold text-white/30 px-8">CIAT</span>
+      <span class="text-3xl font-heading font-bold text-white/30 px-8">PREMTECH</span>
+      <span class="text-3xl font-heading font-bold text-white/30 px-8">BTD</span>
+      <span class="text-3xl font-heading font-bold text-white/30 px-8">FIRST PLASTICS</span>
+      <span class="text-3xl font-heading font-bold text-white/30 px-8">FOX COOLING</span>
+      <span class="text-3xl font-heading font-bold text-white/30 px-8">CARRIER</span>
+      <span class="text-3xl font-heading font-bold text-white/30 px-8">CIAT</span>
+      <span class="text-3xl font-heading font-bold text-white/30 px-8">PREMTECH</span>
+      <span class="text-3xl font-heading font-bold text-white/30 px-8">BTD</span>
+      <span class="text-3xl font-heading font-bold text-white/30 px-8">FIRST PLASTICS</span>
+      <span class="text-3xl font-heading font-bold text-white/30 px-8">FOX COOLING</span>
+    </div>
+  </div>
+</section>
+
+<!-- Pourquoi ces partenariats -->
+<section class="py-28 bg-white dark:bg-navy-950">
+  <div class="max-w-7xl mx-auto px-6 lg:px-10 grid lg:grid-cols-2 gap-16 items-center">
+    <div data-aos="fade-right">
+      <p class="section-eyebrow text-electric-600 dark:text-cyan-400 font-semibold text-xs uppercase mb-4">Pourquoi ces alliances</p>
+      <h2 class="font-heading font-bold text-4xl text-navy-900 dark:text-white mb-6">Le meilleur des technologies mondiales, adapté au contexte local</h2>
+      <p class="text-steel-600 dark:text-steel-300 leading-relaxed mb-6">Nos partenariats avec des fabricants comme Carrier et CIAT (climatisation), Premtech et BTD (équipements industriels), First Plastics et FOX Cooling nous permettent de garantir à nos clients un accès direct à des équipements de dernière génération, avec un support technique de premier niveau.</p>
+      <ul class="space-y-3 text-sm text-steel-600 dark:text-steel-300">
+        <li class="flex items-center gap-3"><span class="w-2 h-2 rounded-full bg-electric-500"></span>Équipements certifiés et garantis</li>
+        <li class="flex items-center gap-3"><span class="w-2 h-2 rounded-full bg-electric-500"></span>Formation continue de nos équipes techniques</li>
+        <li class="flex items-center gap-3"><span class="w-2 h-2 rounded-full bg-electric-500"></span>Pièces détachées disponibles rapidement</li>
+        <li class="flex items-center gap-3"><span class="w-2 h-2 rounded-full bg-electric-500"></span>Support technique international</li>
+      </ul>
+    </div>
+    <div class="rounded-3xl overflow-hidden shadow-premium-lg aspect-[4/3]" data-aos="fade-left"><img src="assets/img/mep-overhead-install.jpg" class="w-full h-full object-cover" alt="Partenariats FI2E"></div>
+  </div>
+</section>
+
+<!-- Témoignages -->
+<section class="py-28 bg-navy-950 relative overflow-hidden">
+  <div class="absolute inset-0 hero-grid opacity-40"></div>
+  <div class="relative max-w-4xl mx-auto px-6 lg:px-10 text-center">
+    <p class="section-eyebrow text-cyan-400 font-semibold text-xs uppercase mb-4" data-aos="fade-up">Témoignages clients</p>
+    <h2 class="font-heading font-bold text-4xl lg:text-5xl text-white mb-14" data-aos="fade-up">Ils nous ont fait confiance</h2>
+    <div class="swiper testimonial-swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="glass-dark rounded-3xl p-10">
+            <div class="flex justify-center gap-1 mb-6 text-cyan-400">
+              <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+              <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+              <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+              <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+              <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+            </div>
+            <p class="text-xl text-white font-heading leading-relaxed mb-8">« Grâce au partenariat FI2E-Carrier, nous avons bénéficié d'un support technique exemplaire sur l'ensemble de notre installation VRV. »</p>
+            <p class="text-white font-semibold text-sm">Responsable Maintenance</p>
+            <p class="text-steel-400 text-xs">Site industriel, Douala</p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="glass-dark rounded-3xl p-10">
+            <div class="flex justify-center gap-1 mb-6 text-cyan-400">
+              <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+              <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+              <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+              <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+              <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+            </div>
+            <p class="text-xl text-white font-heading leading-relaxed mb-8">« Les équipements Premtech installés par FI2E fonctionnent sans interruption depuis leur mise en service. Fiabilité au rendez-vous. »</p>
+            <p class="text-white font-semibold text-sm">Directeur d'exploitation</p>
+            <p class="text-steel-400 text-xs">Groupe industriel régional</p>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-pagination flex justify-center gap-2 mt-8"></div>
+    </div>
+  </div>
+</section>
+
+<section class="py-24 bg-white dark:bg-navy-950">
+  <div class="max-w-4xl mx-auto px-6 lg:px-10 text-center" data-aos="zoom-in">
+    <h2 class="font-heading font-bold text-4xl text-navy-900 dark:text-white mb-6">Devenir partenaire de FI2E</h2>
+    <p class="text-steel-500 mb-8 max-w-xl mx-auto">Vous êtes fabricant ou distributeur d'équipements techniques ? Discutons d'un partenariat.</p>
+    <a href="contact.html" class="btn-primary inline-flex items-center gap-2 text-white font-semibold px-8 py-4 rounded-full">Nous contacter</a>
+  </div>
+</section>
+</main>
+
+<footer class="bg-navy-950 pt-20 pb-8 border-t border-white/5">
+  <div class="max-w-7xl mx-auto px-6 lg:px-10">
+    <div class="grid lg:grid-cols-12 gap-12 pb-16">
+      <div class="lg:col-span-4">
+        <a href="index.html" class="flex items-center gap-3 mb-6">
+          <img src="assets/img/logo-fi2e.png" alt="FI2E" class="h-14 w-auto">
+        </a>
+        <p class="text-steel-400 text-sm leading-relaxed mb-6">Facility Integrated Engineering & Energy — Votre partenaire en solutions intégrées du bâtiment.</p>
+      </div>
+      <div class="lg:col-span-2">
+        <h4 class="font-heading font-semibold text-white mb-5">Navigation</h4>
+        <ul class="space-y-3 text-sm text-steel-400">
+          <li><a href="index.html" class="hover:text-cyan-400 transition-colors">Accueil</a></li>
+          <li><a href="entreprise.html" class="hover:text-cyan-400 transition-colors">Entreprise</a></li>
+          <li><a href="realisations.html" class="hover:text-cyan-400 transition-colors">Réalisations</a></li>
+          <li><a href="carrieres.html" class="hover:text-cyan-400 transition-colors">Carrières</a></li>
+        </ul>
+      </div>
+      <div class="lg:col-span-2">
+        <h4 class="font-heading font-semibold text-white mb-5">Expertises</h4>
+        <ul class="space-y-3 text-sm text-steel-400">
+          <li><a href="expertises.html#hvac" class="hover:text-cyan-400 transition-colors">HVAC</a></li>
+          <li><a href="expertises.html#electricite" class="hover:text-cyan-400 transition-colors">Électricité</a></li>
+          <li><a href="expertises.html#gtb" class="hover:text-cyan-400 transition-colors">GTB</a></li>
+        </ul>
+      </div>
+      <div class="lg:col-span-4">
+        <h4 class="font-heading font-semibold text-white mb-5">Contact</h4>
+        <div class="space-y-2 text-sm text-steel-400">
+          <p>Logpom, B.P. 10311, Douala — Cameroun</p>
+          <p>+237 699 05 54 75</p>
+          <p>f2iegroup@gmail.com</p>
+        </div>
+      </div>
+    </div>
+    <div class="pt-8 border-t border-white/5 flex flex-wrap justify-between items-center gap-4 text-xs text-steel-500">
+      <p>© <span data-year>2026</span> FI2E. Tous droits réservés.</p>
+      <div class="flex gap-6"><a href="#" class="hover:text-cyan-400 transition-colors">Mentions légales</a><a href="#" class="hover:text-cyan-400 transition-colors">Confidentialité</a></div>
+    </div>
+  </div>
+</footer>
+
+<button id="back-to-top" class="fixed bottom-8 right-8 z-40 w-12 h-12 rounded-full btn-primary text-white flex items-center justify-center opacity-0 pointer-events-none" aria-label="Retour en haut">
+  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7"/></svg>
+</button>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
+<script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

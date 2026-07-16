@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blog — FI2E | Énergie, HVAC, Smart Building, GTB, Innovation</title>
+<meta name="description" content="Le blog FI2E : actualités et insights sur l'énergie, le HVAC, les bâtiments intelligents, la GTB, l'innovation, la maintenance et les normes.">
+<link rel="icon" type="image/png" href="assets/img/logo-fi2e.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="assets/js/tailwind-config.js"></script>
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="font-body antialiased bg-white text-navy-900 dark:bg-navy-950 dark:text-steel-100">
+
+<div id="page-loader"><div class="loader-mark"><img src="assets/img/logo-fi2e.png" alt="FI2E"></div></div>
+<div id="cursor-dot"></div><div id="cursor-ring"></div>
+
+<header>
+<nav id="site-nav" class="fixed top-0 left-0 w-full z-50 py-5">
+  <div class="max-w-7xl mx-auto px-6 lg:px-10 flex items-center justify-between">
+    <a href="index.html" class="flex items-center gap-3 group">
+      <img src="assets/img/logo-fi2e.png" alt="FI2E - Facility Integrated Engineering & Energy" class="h-14 w-auto group-hover:scale-105 transition-transform">
+    </a>
+    <ul class="hidden lg:flex items-center gap-9 text-sm font-medium text-white/90">
+      <li><a href="index.html" class="nav-link">Accueil</a></li>
+      <li><a href="entreprise.html" class="nav-link">Entreprise</a></li>
+      <li><a href="services.html" class="nav-link">Services</a></li>
+      <li><a href="expertises.html" class="nav-link">Expertises</a></li>
+      <li><a href="realisations.html" class="nav-link">Réalisations</a></li>
+      <li><a href="projets.html" class="nav-link">Projets</a></li>
+      <li><a href="partenaires.html" class="nav-link">Partenaires</a></li>
+      <li><a href="carrieres.html" class="nav-link">Carrières</a></li>
+      <li><a href="blog.html" class="nav-link active">Blog</a></li>
+      <li><a href="contact.html" class="nav-link">Contact</a></li>
+    </ul>
+    <div class="flex items-center gap-4">
+      <button data-dark-toggle class="hidden sm:flex w-9 h-9 rounded-full items-center justify-center text-white/80 hover:text-white border border-white/20 hover:border-white/40 transition-colors">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.36 6.36l-.7-.7M6.34 6.34l-.7-.7m12.02 0l-.7.7M6.34 17.66l-.7.7M12 8a4 4 0 100 8 4 4 0 000-8z"/></svg>
+      </button>
+      <a href="contact.html" class="btn-primary hidden sm:inline-flex items-center gap-2 text-white text-sm font-semibold px-5 py-3 rounded-full">
+        Demander un devis
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+      </a>
+      <button id="menu-btn" class="lg:hidden text-white w-10 h-10 flex items-center justify-center">
+        <svg id="icon-open" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        <svg id="icon-close" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+      </button>
+    </div>
+  </div>
+  <div id="mobile-menu" class="hidden lg:hidden fixed inset-0 top-0 bg-navy-950 z-40 pt-24 px-6 overflow-y-auto h-screen">
+    <ul class="flex flex-col gap-1 text-lg font-heading font-medium text-white">
+      <li><a href="index.html" class="block py-3 border-b border-white/10">Accueil</a></li>
+      <li><a href="entreprise.html" class="block py-3 border-b border-white/10">Entreprise</a></li>
+      <li><a href="services.html" class="block py-3 border-b border-white/10">Services</a></li>
+      <li><a href="expertises.html" class="block py-3 border-b border-white/10">Expertises</a></li>
+      <li><a href="realisations.html" class="block py-3 border-b border-white/10">Réalisations</a></li>
+      <li><a href="projets.html" class="block py-3 border-b border-white/10">Projets</a></li>
+      <li><a href="partenaires.html" class="block py-3 border-b border-white/10">Partenaires</a></li>
+      <li><a href="carrieres.html" class="block py-3 border-b border-white/10">Carrières</a></li>
+      <li><a href="blog.html" class="block py-3 border-b border-white/10">Blog</a></li>
+      <li><a href="contact.html" class="block py-3 border-b border-white/10">Contact</a></li>
+    </ul>
+    <a href="contact.html" class="btn-primary mt-8 inline-flex items-center justify-center gap-2 text-white text-sm font-semibold px-6 py-4 rounded-full w-full">Demander un devis</a>
+  </div>
+</nav>
+</header>
+
+<main>
+<section class="relative pt-44 pb-16 hero-bg overflow-hidden">
+  <div class="absolute inset-0 hero-grid"></div>
+  <div class="relative max-w-7xl mx-auto px-6 lg:px-10 text-center">
+    <p class="section-eyebrow text-cyan-400 font-semibold text-xs uppercase mb-4" data-aos="fade-up">Insights</p>
+    <h1 class="font-heading font-extrabold text-5xl lg:text-6xl text-white mb-6" data-aos="fade-up" data-aos-delay="100">Le blog FI2E</h1>
+    <p class="text-steel-300 text-lg max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="200">Actualités, analyses et conseils techniques sur l'énergie et les bâtiments intelligents.</p>
+  </div>
+</section>
+
+<section class="py-24 bg-white dark:bg-navy-950">
+  <div class="max-w-7xl mx-auto px-6 lg:px-10">
+
+    <!-- Categories -->
+    <div class="flex flex-wrap justify-center gap-3 mb-16" data-aos="fade-up">
+      <button data-filter-btn="all" class="filter-btn active px-5 py-2.5 rounded-full text-sm font-semibold border border-steel-200 dark:border-navy-700 text-navy-700 dark:text-steel-200">Tous</button>
+      <button data-filter-btn="energie" class="filter-btn px-5 py-2.5 rounded-full text-sm font-semibold border border-steel-200 dark:border-navy-700 text-navy-700 dark:text-steel-200">Énergie</button>
+      <button data-filter-btn="hvac" class="filter-btn px-5 py-2.5 rounded-full text-sm font-semibold border border-steel-200 dark:border-navy-700 text-navy-700 dark:text-steel-200">HVAC</button>
+      <button data-filter-btn="smart" class="filter-btn px-5 py-2.5 rounded-full text-sm font-semibold border border-steel-200 dark:border-navy-700 text-navy-700 dark:text-steel-200">Smart Building</button>
+      <button data-filter-btn="gtb" class="filter-btn px-5 py-2.5 rounded-full text-sm font-semibold border border-steel-200 dark:border-navy-700 text-navy-700 dark:text-steel-200">GTB</button>
+      <button data-filter-btn="innovation" class="filter-btn px-5 py-2.5 rounded-full text-sm font-semibold border border-steel-200 dark:border-navy-700 text-navy-700 dark:text-steel-200">Innovation</button>
+      <button data-filter-btn="maintenance" class="filter-btn px-5 py-2.5 rounded-full text-sm font-semibold border border-steel-200 dark:border-navy-700 text-navy-700 dark:text-steel-200">Maintenance</button>
+      <button data-filter-btn="normes" class="filter-btn px-5 py-2.5 rounded-full text-sm font-semibold border border-steel-200 dark:border-navy-700 text-navy-700 dark:text-steel-200">Normes</button>
+    </div>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+      <a href="#" data-filter-item="energie" class="portfolio-item card-float group bg-steel-50 dark:bg-navy-900 rounded-2xl overflow-hidden shadow-premium" data-aos="fade-up">
+        <div class="aspect-video overflow-hidden"><img src="assets/img/plumbing-pump-room.jpg" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" alt="Énergie"></div>
+        <div class="p-6">
+          <span class="text-xs font-semibold text-electric-600 dark:text-cyan-400 uppercase tracking-wide">Énergie</span>
+          <h3 class="font-heading font-bold text-lg text-navy-900 dark:text-white mt-2 mb-2">Optimiser la performance énergétique de vos bâtiments</h3>
+          <p class="text-sm text-steel-500">5 leviers concrets pour réduire vos coûts d'exploitation sans compromis sur le confort.</p>
+        </div>
+      </a>
+
+      <a href="#" data-filter-item="smart" class="portfolio-item card-float group bg-steel-50 dark:bg-navy-900 rounded-2xl overflow-hidden shadow-premium" data-aos="fade-up" data-aos-delay="50">
+        <div class="aspect-video overflow-hidden"><img src="assets/img/mep-overhead-install.jpg" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" alt="Smart Building"></div>
+        <div class="p-6">
+          <span class="text-xs font-semibold text-electric-600 dark:text-cyan-400 uppercase tracking-wide">Smart Building</span>
+          <h3 class="font-heading font-bold text-lg text-navy-900 dark:text-white mt-2 mb-2">GTB : pourquoi automatiser votre bâtiment dès aujourd'hui</h3>
+          <p class="text-sm text-steel-500">Les bénéfices concrets de la supervision intelligente pour vos infrastructures.</p>
+        </div>
+      </a>
+
+      <a href="#" data-filter-item="hvac" class="portfolio-item card-float group bg-steel-50 dark:bg-navy-900 rounded-2xl overflow-hidden shadow-premium" data-aos="fade-up" data-aos-delay="100">
+        <div class="aspect-video overflow-hidden"><img src="assets/img/hvac-vrv-outdoor-unit.jpg" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" alt="VRV vs VRF"></div>
+        <div class="p-6">
+          <span class="text-xs font-semibold text-electric-600 dark:text-cyan-400 uppercase tracking-wide">HVAC</span>
+          <h3 class="font-heading font-bold text-lg text-navy-900 dark:text-white mt-2 mb-2">VRV vs VRF : quel système choisir pour votre projet ?</h3>
+          <p class="text-sm text-steel-500">Comparatif technique complet pour orienter votre décision d'investissement.</p>
+        </div>
+      </a>
+
+      <a href="#" data-filter-item="gtb" class="portfolio-item card-float group bg-steel-50 dark:bg-navy-900 rounded-2xl overflow-hidden shadow-premium" data-aos="fade-up">
+        <div class="aspect-video overflow-hidden"><img src="assets/img/electrical-panel-breakers.jpg" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" alt="GTB"></div>
+        <div class="p-6">
+          <span class="text-xs font-semibold text-electric-600 dark:text-cyan-400 uppercase tracking-wide">GTB</span>
+          <h3 class="font-heading font-bold text-lg text-navy-900 dark:text-white mt-2 mb-2">Les capteurs IoT au service de la maintenance prédictive</h3>
+          <p class="text-sm text-steel-500">Comment l'IoT transforme la gestion technique de vos bâtiments.</p>
+        </div>
+      </a>
+
+      <a href="#" data-filter-item="innovation" class="portfolio-item card-float group bg-steel-50 dark:bg-navy-900 rounded-2xl overflow-hidden shadow-premium" data-aos="fade-up" data-aos-delay="50">
+        <div class="aspect-video overflow-hidden"><img src="assets/img/engineering-blueprint.jpg" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" alt="Innovation BIM"></div>
+        <div class="p-6">
+          <span class="text-xs font-semibold text-electric-600 dark:text-cyan-400 uppercase tracking-wide">Innovation</span>
+          <h3 class="font-heading font-bold text-lg text-navy-900 dark:text-white mt-2 mb-2">Le BIM, un levier de coordination pour vos projets MEP</h3>
+          <p class="text-sm text-steel-500">Pourquoi la modélisation 3D change la donne sur les chantiers complexes.</p>
+        </div>
+      </a>
+
+      <a href="#" data-filter-item="maintenance" class="portfolio-item card-float group bg-steel-50 dark:bg-navy-900 rounded-2xl overflow-hidden shadow-premium" data-aos="fade-up" data-aos-delay="100">
+        <div class="aspect-video overflow-hidden"><img src="assets/img/hvac-ceiling-cassette.jpg" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" alt="Maintenance"></div>
+        <div class="p-6">
+          <span class="text-xs font-semibold text-electric-600 dark:text-cyan-400 uppercase tracking-wide">Maintenance</span>
+          <h3 class="font-heading font-bold text-lg text-navy-900 dark:text-white mt-2 mb-2">Maintenance préventive vs curative : quel équilibre trouver ?</h3>
+          <p class="text-sm text-steel-500">Notre méthodologie pour maximiser la disponibilité de vos équipements.</p>
+        </div>
+      </a>
+
+      <a href="#" data-filter-item="normes" class="portfolio-item card-float group bg-steel-50 dark:bg-navy-900 rounded-2xl overflow-hidden shadow-premium" data-aos="fade-up">
+        <div class="aspect-video overflow-hidden"><img src="assets/img/hvac-ductwork-ceiling.jpg" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" alt="Normes"></div>
+        <div class="p-6">
+          <span class="text-xs font-semibold text-electric-600 dark:text-cyan-400 uppercase tracking-wide">Normes</span>
+          <h3 class="font-heading font-bold text-lg text-navy-900 dark:text-white mt-2 mb-2">Comprendre les normes ASHRAE appliquées à vos installations</h3>
+          <p class="text-sm text-steel-500">Ce que chaque maître d'ouvrage doit savoir sur les standards HVAC.</p>
+        </div>
+      </a>
+
+      <a href="#" data-filter-item="energie" class="portfolio-item card-float group bg-steel-50 dark:bg-navy-900 rounded-2xl overflow-hidden shadow-premium" data-aos="fade-up" data-aos-delay="50">
+        <div class="aspect-video overflow-hidden"><img src="assets/img/hvac-duct-wide.jpg" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" alt="Énergie solaire"></div>
+        <div class="p-6">
+          <span class="text-xs font-semibold text-electric-600 dark:text-cyan-400 uppercase tracking-wide">Énergie</span>
+          <h3 class="font-heading font-bold text-lg text-navy-900 dark:text-white mt-2 mb-2">Intégrer le solaire dans vos infrastructures industrielles</h3>
+          <p class="text-sm text-steel-500">Retour d'expérience sur nos premières installations hybrides.</p>
+        </div>
+      </a>
+
+      <a href="#" data-filter-item="hvac" class="portfolio-item card-float group bg-steel-50 dark:bg-navy-900 rounded-2xl overflow-hidden shadow-premium" data-aos="fade-up" data-aos-delay="100">
+        <div class="aspect-video overflow-hidden"><img src="assets/img/hvac-chiller-rooftop.jpg" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" alt="Climatisation hospitalière"></div>
+        <div class="p-6">
+          <span class="text-xs font-semibold text-electric-600 dark:text-cyan-400 uppercase tracking-wide">HVAC</span>
+          <h3 class="font-heading font-bold text-lg text-navy-900 dark:text-white mt-2 mb-2">Climatisation hospitalière : les exigences spécifiques</h3>
+          <p class="text-sm text-steel-500">Retour d'expérience sur nos interventions en environnement médical.</p>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- Newsletter -->
+<section class="py-24 bg-navy-950 relative overflow-hidden">
+  <div class="absolute inset-0 hero-grid opacity-30"></div>
+  <div class="relative max-w-3xl mx-auto px-6 lg:px-10 text-center" data-aos="zoom-in">
+    <h2 class="font-heading font-bold text-3xl lg:text-4xl text-white mb-4">Ne manquez aucun article</h2>
+    <p class="text-steel-300 mb-8">Recevez nos analyses techniques directement dans votre boîte mail.</p>
+    <form data-newsletter-form class="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
+      <input type="email" required placeholder="Votre email professionnel" class="flex-1 bg-white/5 border border-white/10 rounded-full px-5 py-3.5 text-sm text-white placeholder:text-steel-500 focus:border-cyan-400 transition-colors">
+      <button type="submit" class="btn-primary text-white text-sm font-semibold px-6 py-3.5 rounded-full whitespace-nowrap">S'abonner</button>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer class="bg-navy-950 pt-20 pb-8 border-t border-white/5">
+  <div class="max-w-7xl mx-auto px-6 lg:px-10">
+    <div class="grid lg:grid-cols-12 gap-12 pb-16">
+      <div class="lg:col-span-4">
+        <a href="index.html" class="flex items-center gap-3 mb-6">
+          <img src="assets/img/logo-fi2e.png" alt="FI2E" class="h-14 w-auto">
+        </a>
+        <p class="text-steel-400 text-sm leading-relaxed mb-6">Facility Integrated Engineering & Energy — Votre partenaire en solutions intégrées du bâtiment.</p>
+      </div>
+      <div class="lg:col-span-2">
+        <h4 class="font-heading font-semibold text-white mb-5">Navigation</h4>
+        <ul class="space-y-3 text-sm text-steel-400">
+          <li><a href="index.html" class="hover:text-cyan-400 transition-colors">Accueil</a></li>
+          <li><a href="entreprise.html" class="hover:text-cyan-400 transition-colors">Entreprise</a></li>
+          <li><a href="realisations.html" class="hover:text-cyan-400 transition-colors">Réalisations</a></li>
+          <li><a href="carrieres.html" class="hover:text-cyan-400 transition-colors">Carrières</a></li>
+        </ul>
+      </div>
+      <div class="lg:col-span-2">
+        <h4 class="font-heading font-semibold text-white mb-5">Expertises</h4>
+        <ul class="space-y-3 text-sm text-steel-400">
+          <li><a href="expertises.html#hvac" class="hover:text-cyan-400 transition-colors">HVAC</a></li>
+          <li><a href="expertises.html#electricite" class="hover:text-cyan-400 transition-colors">Électricité</a></li>
+          <li><a href="expertises.html#gtb" class="hover:text-cyan-400 transition-colors">GTB</a></li>
+        </ul>
+      </div>
+      <div class="lg:col-span-4">
+        <h4 class="font-heading font-semibold text-white mb-5">Contact</h4>
+        <div class="space-y-2 text-sm text-steel-400">
+          <p>Logpom, B.P. 10311, Douala — Cameroun</p>
+          <p>+237 699 05 54 75</p>
+          <p>f2iegroup@gmail.com</p>
+        </div>
+      </div>
+    </div>
+    <div class="pt-8 border-t border-white/5 flex flex-wrap justify-between items-center gap-4 text-xs text-steel-500">
+      <p>© <span data-year>2026</span> FI2E. Tous droits réservés.</p>
+      <div class="flex gap-6"><a href="#" class="hover:text-cyan-400 transition-colors">Mentions légales</a><a href="#" class="hover:text-cyan-400 transition-colors">Confidentialité</a></div>
+    </div>
+  </div>
+</footer>
+
+<button id="back-to-top" class="fixed bottom-8 right-8 z-40 w-12 h-12 rounded-full btn-primary text-white flex items-center justify-center opacity-0 pointer-events-none" aria-label="Retour en haut">
+  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7"/></svg>
+</button>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
+<script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

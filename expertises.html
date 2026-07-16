@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Expertises — FI2E | HVAC, Électricité, GTB, Plomberie, Énergie, BIM</title>
+<meta name="description" content="Explorez les domaines d'expertise FI2E : HVAC & climatisation VRV/VRF, électricité industrielle, GTB & smart building, plomberie & traitement de l'eau, énergie & automatisation, ingénierie & BIM.">
+<link rel="icon" type="image/png" href="assets/img/logo-fi2e.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="assets/js/tailwind-config.js"></script>
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="font-body antialiased bg-white text-navy-900 dark:bg-navy-950 dark:text-steel-100">
+
+<div id="page-loader"><div class="loader-mark"><img src="assets/img/logo-fi2e.png" alt="FI2E"></div></div>
+<div id="cursor-dot"></div><div id="cursor-ring"></div>
+
+<header>
+<nav id="site-nav" class="fixed top-0 left-0 w-full z-50 py-5">
+  <div class="max-w-7xl mx-auto px-6 lg:px-10 flex items-center justify-between">
+    <a href="index.html" class="flex items-center gap-3 group">
+      <img src="assets/img/logo-fi2e.png" alt="FI2E - Facility Integrated Engineering & Energy" class="h-14 w-auto group-hover:scale-105 transition-transform">
+    </a>
+    <ul class="hidden lg:flex items-center gap-9 text-sm font-medium text-white/90">
+      <li><a href="index.html" class="nav-link">Accueil</a></li>
+      <li><a href="entreprise.html" class="nav-link">Entreprise</a></li>
+      <li><a href="services.html" class="nav-link">Services</a></li>
+      <li><a href="expertises.html" class="nav-link active">Expertises</a></li>
+      <li><a href="realisations.html" class="nav-link">Réalisations</a></li>
+      <li><a href="projets.html" class="nav-link">Projets</a></li>
+      <li><a href="partenaires.html" class="nav-link">Partenaires</a></li>
+      <li><a href="carrieres.html" class="nav-link">Carrières</a></li>
+      <li><a href="blog.html" class="nav-link">Blog</a></li>
+      <li><a href="contact.html" class="nav-link">Contact</a></li>
+    </ul>
+    <div class="flex items-center gap-4">
+      <button data-dark-toggle class="hidden sm:flex w-9 h-9 rounded-full items-center justify-center text-white/80 hover:text-white border border-white/20 hover:border-white/40 transition-colors">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.36 6.36l-.7-.7M6.34 6.34l-.7-.7m12.02 0l-.7.7M6.34 17.66l-.7.7M12 8a4 4 0 100 8 4 4 0 000-8z"/></svg>
+      </button>
+      <a href="contact.html" class="btn-primary hidden sm:inline-flex items-center gap-2 text-white text-sm font-semibold px-5 py-3 rounded-full">
+        Demander un devis
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+      </a>
+      <button id="menu-btn" class="lg:hidden text-white w-10 h-10 flex items-center justify-center">
+        <svg id="icon-open" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        <svg id="icon-close" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+      </button>
+    </div>
+  </div>
+  <div id="mobile-menu" class="hidden lg:hidden fixed inset-0 top-0 bg-navy-950 z-40 pt-24 px-6 overflow-y-auto h-screen">
+    <ul class="flex flex-col gap-1 text-lg font-heading font-medium text-white">
+      <li><a href="index.html" class="block py-3 border-b border-white/10">Accueil</a></li>
+      <li><a href="entreprise.html" class="block py-3 border-b border-white/10">Entreprise</a></li>
+      <li><a href="services.html" class="block py-3 border-b border-white/10">Services</a></li>
+      <li><a href="expertises.html" class="block py-3 border-b border-white/10">Expertises</a></li>
+      <li><a href="realisations.html" class="block py-3 border-b border-white/10">Réalisations</a></li>
+      <li><a href="projets.html" class="block py-3 border-b border-white/10">Projets</a></li>
+      <li><a href="partenaires.html" class="block py-3 border-b border-white/10">Partenaires</a></li>
+      <li><a href="carrieres.html" class="block py-3 border-b border-white/10">Carrières</a></li>
+      <li><a href="blog.html" class="block py-3 border-b border-white/10">Blog</a></li>
+      <li><a href="contact.html" class="block py-3 border-b border-white/10">Contact</a></li>
+    </ul>
+    <a href="contact.html" class="btn-primary mt-8 inline-flex items-center justify-center gap-2 text-white text-sm font-semibold px-6 py-4 rounded-full w-full">Demander un devis</a>
+  </div>
+</nav>
+</header>
+
+<main>
+<section class="relative pt-44 pb-24 hero-bg overflow-hidden">
+  <div class="absolute inset-0 hero-grid"></div>
+  <div class="relative max-w-7xl mx-auto px-6 lg:px-10 text-center">
+    <p class="section-eyebrow text-cyan-400 font-semibold text-xs uppercase mb-4" data-aos="fade-up">Savoir-faire technique</p>
+    <h1 class="font-heading font-extrabold text-5xl lg:text-6xl text-white mb-6" data-aos="fade-up" data-aos-delay="100">Nos domaines d'expertise</h1>
+    <p class="text-steel-300 text-lg max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="200">Une seule équipe intégrée, pour des bâtiments performants et intelligents.</p>
+  </div>
+</section>
+
+<!-- 3 PILIERS OFFICIELS -->
+<section class="py-24 bg-white dark:bg-navy-950">
+  <div class="max-w-7xl mx-auto px-6 lg:px-10">
+    <div class="text-center max-w-2xl mx-auto mb-14" data-aos="fade-up">
+      <p class="section-eyebrow text-electric-600 dark:text-cyan-400 font-semibold text-xs uppercase mb-4">Nos 3 piliers</p>
+      <h2 class="font-heading font-bold text-4xl text-navy-900 dark:text-white">Une offre structurée, de l'étude à l'exploitation</h2>
+    </div>
+    <div class="grid lg:grid-cols-3 gap-8">
+      <div class="rounded-2xl border border-steel-100 dark:border-navy-800 p-8" data-aos="fade-up" data-aos-delay="0">
+        <span class="font-heading font-extrabold text-3xl text-electric-100 dark:text-navy-700">01</span>
+        <h3 class="font-heading font-bold text-xl text-navy-900 dark:text-white mt-3 mb-4">Études de Conception et d'Ingénierie Stratégique</h3>
+        <ul class="space-y-2 text-sm text-steel-600 dark:text-steel-300">
+          <li class="flex items-start gap-2"><span class="w-1.5 h-1.5 rounded-full bg-electric-500 mt-1.5 flex-shrink-0"></span>Études de conception en climatisation, électricité et plomberie</li>
+          <li class="flex items-start gap-2"><span class="w-1.5 h-1.5 rounded-full bg-electric-500 mt-1.5 flex-shrink-0"></span>Plans et schémas de systèmes complets</li>
+          <li class="flex items-start gap-2"><span class="w-1.5 h-1.5 rounded-full bg-electric-500 mt-1.5 flex-shrink-0"></span>Solutions éco-énergétiques</li>
+          <li class="flex items-start gap-2"><span class="w-1.5 h-1.5 rounded-full bg-electric-500 mt-1.5 flex-shrink-0"></span>Conception de systèmes de traitement de l'eau</li>
+          <li class="flex items-start gap-2"><span class="w-1.5 h-1.5 rounded-full bg-electric-500 mt-1.5 flex-shrink-0"></span>Études techniques et rapports de faisabilité</li>
+        </ul>
+      </div>
+      <div class="rounded-2xl border border-steel-100 dark:border-navy-800 p-8" data-aos="fade-up" data-aos-delay="100">
+        <span class="font-heading font-extrabold text-3xl text-electric-100 dark:text-navy-700">02</span>
+        <h3 class="font-heading font-bold text-xl text-navy-900 dark:text-white mt-3 mb-4">Fabrication & Installation</h3>
+        <ul class="space-y-2 text-sm text-steel-600 dark:text-steel-300">
+          <li class="flex items-start gap-2"><span class="w-1.5 h-1.5 rounded-full bg-electric-500 mt-1.5 flex-shrink-0"></span>Fabrication et installation de gaines de ventilation haute précision</li>
+          <li class="flex items-start gap-2"><span class="w-1.5 h-1.5 rounded-full bg-electric-500 mt-1.5 flex-shrink-0"></span>Montage d'équipements et de systèmes</li>
+          <li class="flex items-start gap-2"><span class="w-1.5 h-1.5 rounded-full bg-electric-500 mt-1.5 flex-shrink-0"></span>Réseaux de tuyauterie CPVC et conduits de désenfumage</li>
+          <li class="flex items-start gap-2"><span class="w-1.5 h-1.5 rounded-full bg-electric-500 mt-1.5 flex-shrink-0"></span>Installation de systèmes VRV/VRF et solutions spécialisées</li>
+          <li class="flex items-start gap-2"><span class="w-1.5 h-1.5 rounded-full bg-electric-500 mt-1.5 flex-shrink-0"></span>Fabrication de kits méchano-soudés</li>
+        </ul>
+      </div>
+      <div class="rounded-2xl border border-steel-100 dark:border-navy-800 p-8" data-aos="fade-up" data-aos-delay="200">
+        <span class="font-heading font-extrabold text-3xl text-electric-100 dark:text-navy-700">03</span>
+        <h3 class="font-heading font-bold text-xl text-navy-900 dark:text-white mt-3 mb-4">Solutions Électriques et Informatiques</h3>
+        <ul class="space-y-2 text-sm text-steel-600 dark:text-steel-300">
+          <li class="flex items-start gap-2"><span class="w-1.5 h-1.5 rounded-full bg-electric-500 mt-1.5 flex-shrink-0"></span>Conception électrique et distribution d'énergie</li>
+          <li class="flex items-start gap-2"><span class="w-1.5 h-1.5 rounded-full bg-electric-500 mt-1.5 flex-shrink-0"></span>Contrôles et automatisation des systèmes</li>
+          <li class="flex items-start gap-2"><span class="w-1.5 h-1.5 rounded-full bg-electric-500 mt-1.5 flex-shrink-0"></span>Systèmes de Gestion Technique du Bâtiment (GTB)</li>
+          <li class="flex items-start gap-2"><span class="w-1.5 h-1.5 rounded-full bg-electric-500 mt-1.5 flex-shrink-0"></span>Optimisation des systèmes</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HVAC -->
+<section id="hvac" class="py-24 bg-white dark:bg-navy-950 scroll-mt-24">
+  <div class="max-w-7xl mx-auto px-6 lg:px-10 grid lg:grid-cols-2 gap-16 items-center">
+    <div data-aos="fade-right">
+      <span class="w-14 h-14 rounded-2xl bg-gradient-to-br from-electric-500 to-cyan-500 flex items-center justify-center mb-6 shadow-glow"><svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" d="M12 2v20M2 12h20M5 5l14 14M19 5L5 19"/></svg></span>
+      <p class="section-eyebrow text-electric-600 dark:text-cyan-400 font-semibold text-xs uppercase mb-3">01 — Climatisation</p>
+      <h2 class="font-heading font-bold text-4xl text-navy-900 dark:text-white mb-5">HVAC & Climatisation</h2>
+      <p class="text-steel-600 dark:text-steel-300 leading-relaxed mb-6">Conception et installation de systèmes de climatisation VRV/VRF, traitement d'air et climatisation industrielle, dimensionnés pour garantir confort thermique et efficacité énergétique dans tous types de bâtiments.</p>
+      <ul class="grid sm:grid-cols-2 gap-3 text-sm">
+        <li class="flex items-center gap-2 text-steel-600 dark:text-steel-300"><span class="w-1.5 h-1.5 rounded-full bg-electric-500"></span>Systèmes VRV / VRF</li>
+        <li class="flex items-center gap-2 text-steel-600 dark:text-steel-300"><span class="w-1.5 h-1.5 rounded-full bg-electric-500"></span>Climatisation industrielle</li>
+        <li class="flex items-center gap-2 text-steel-600 dark:text-steel-300"><span class="w-1.5 h-1.5 rounded-full bg-electric-500"></span>Traitement & renouvellement d'air</li>
+        <li class="flex items-center gap-2 text-steel-600 dark:text-steel-300"><span class="w-1.5 h-1.5 rounded-full bg-electric-500"></span>Salles blanches & data centers</li>
+      </ul>
+    </div>
+    <div class="rounded-3xl overflow-hidden shadow-premium-lg aspect-[4/3]" data-aos="fade-left"><img src="assets/img/hvac-vrv-outdoor-unit.jpg" class="w-full h-full object-cover" alt="HVAC"></div>
+  </div>
+</section>
+
+<!-- ÉLECTRICITÉ -->
+<section id="electricite" class="py-24 bg-steel-50 dark:bg-navy-900 scroll-mt-24">
+  <div class="max-w-7xl mx-auto px-6 lg:px-10 grid lg:grid-cols-2 gap-16 items-center">
+    <div class="rounded-3xl overflow-hidden shadow-premium-lg aspect-[4/3] order-2 lg:order-1" data-aos="fade-right"><img src="assets/img/electrical-panel-breakers.jpg" class="w-full h-full object-cover" alt="Électricité industrielle"></div>
+    <div class="order-1 lg:order-2" data-aos="fade-left">
+      <span class="w-14 h-14 rounded-2xl bg-gradient-to-br from-electric-500 to-cyan-500 flex items-center justify-center mb-6 shadow-glow"><svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" d="M13 2L4.5 13.5H11L10 22l9-13H12l1-7z"/></svg></span>
+      <p class="section-eyebrow text-electric-600 dark:text-cyan-400 font-semibold text-xs uppercase mb-3">02 — Puissance & distribution</p>
+      <h2 class="font-heading font-bold text-4xl text-navy-900 dark:text-white mb-5">Électricité industrielle</h2>
+      <p class="text-steel-600 dark:text-steel-300 leading-relaxed mb-6">Conception et fabrication d'armoires électriques, distribution haute et basse tension, éclairage et protection incendie conformes aux normes internationales les plus strictes.</p>
+      <ul class="grid sm:grid-cols-2 gap-3 text-sm">
+        <li class="flex items-center gap-2 text-steel-600 dark:text-steel-300"><span class="w-1.5 h-1.5 rounded-full bg-electric-500"></span>Armoires électriques sur mesure</li>
+        <li class="flex items-center gap-2 text-steel-600 dark:text-steel-300"><span class="w-1.5 h-1.5 rounded-full bg-electric-500"></span>Distribution HT / BT</li>
+        <li class="flex items-center gap-2 text-steel-600 dark:text-steel-300"><span class="w-1.5 h-1.5 rounded-full bg-electric-500"></span>Éclairage technique & sécurité</li>
+        <li class="flex items-center gap-2 text-steel-600 dark:text-steel-300"><span class="w-1.5 h-1.5 rounded-full bg-electric-500"></span>Groupes électrogènes & onduleurs</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- GTB -->
+<section id="gtb" class="py-24 bg-white dark:bg-navy-950 scroll-mt-24">
+  <div class="max-w-7xl mx-auto px-6 lg:px-10 grid lg:grid-cols-2 gap-16 items-center">
+    <div data-aos="fade-right">
+      <span class="w-14 h-14 rounded-2xl bg-gradient-to-br from-electric-500 to-cyan-500 flex items-center justify-center mb-6 shadow-glow"><svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" d="M9 3v18M15 3v18M3 9h18M3 15h18"/></svg></span>
+      <p class="section-eyebrow text-electric-600 dark:text-cyan-400 font-semibold text-xs uppercase mb-3">03 — Bâtiments intelligents</p>
+      <h2 class="font-heading font-bold text-4xl text-navy-900 dark:text-white mb-5">GTB & Smart Building</h2>
+      <p class="text-steel-600 dark:text-steel-300 leading-relaxed mb-6">Gestion technique de bâtiment centralisée : supervision en temps réel, automatisation des équipements CVC/électriques et pilotage intelligent pour optimiser confort et consommation.</p>
+      <ul class="grid sm:grid-cols-2 gap-3 text-sm">
+        <li class="flex items-center gap-2 text-steel-600 dark:text-steel-300"><span class="w-1.5 h-1.5 rounded-full bg-electric-500"></span>Supervision centralisée</li>
+        <li class="flex items-center gap-2 text-steel-600 dark:text-steel-300"><span class="w-1.5 h-1.5 rounded-full bg-electric-500"></span>Capteurs & IoT industriel</li>
+        <li class="flex items-center gap-2 text-steel-600 dark:text-steel-300"><span class="w-1.5 h-1.5 rounded-full bg-electric-500"></span>Automatisation des process</li>
+        <li class="flex items-center gap-2 text-steel-600 dark:text-steel-300"><span class="w-1.5 h-1.5 rounded-full bg-electric-500"></span>Tableaux de bord temps réel</li>
+      </ul>
+    </div>
+    <div class="rounded-3xl overflow-hidden shadow-premium-lg aspect-[4/3]" data-aos="fade-left"><img src="assets/img/mep-overhead-install.jpg" class="w-full h-full object-cover" alt="GTB Smart Building"></div>
+  </div>
+</section>
+
+<!-- PLOMBERIE -->
+<section id="plomberie" class="py-24 bg-steel-50 dark:bg-navy-900 scroll-mt-24">
+  <div class="max-w-7xl mx-auto px-6 lg:px-10 grid lg:grid-cols-2 gap-16 items-center">
+    <div class="rounded-3xl overflow-hidden shadow-premium-lg aspect-[4/3] order-2 lg:order-1" data-aos="fade-right"><img src="assets/img/plumbing-drainage-install.jpg" class="w-full h-full object-cover" alt="Plomberie et traitement de l'eau"></div>
+    <div class="order-1 lg:order-2" data-aos="fade-left">
+      <span class="w-14 h-14 rounded-2xl bg-gradient-to-br from-electric-500 to-cyan-500 flex items-center justify-center mb-6 shadow-glow"><svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" d="M12 2c3 4 6 7.5 6 11a6 6 0 11-12 0c0-3.5 3-7 6-11z"/></svg></span>
+      <p class="section-eyebrow text-electric-600 dark:text-cyan-400 font-semibold text-xs uppercase mb-3">04 — Réseaux & eau</p>
+      <h2 class="font-heading font-bold text-4xl text-navy-900 dark:text-white mb-5">Plomberie & Traitement de l'eau</h2>
+      <p class="text-steel-600 dark:text-steel-300 leading-relaxed mb-6">Conception de réseaux sanitaires, adduction d'eau, traitement et recyclage des eaux usées pour bâtiments résidentiels, commerciaux et industriels.</p>
+      <ul class="grid sm:grid-cols-2 gap-3 text-sm">
+        <li class="flex items-center gap-2 text-steel-600 dark:text-steel-300"><span class="w-1.5 h-1.5 rounded-full bg-electric-500"></span>Réseaux sanitaires complets</li>
+        <li class="flex items-center gap-2 text-steel-600 dark:text-steel-300"><span class="w-1.5 h-1.5 rounded-full bg-electric-500"></span>Stations de traitement d'eau</li>
+        <li class="flex items-center gap-2 text-steel-600 dark:text-steel-300"><span class="w-1.5 h-1.5 rounded-full bg-electric-500"></span>Recyclage & réutilisation</li>
+        <li class="flex items-center gap-2 text-steel-600 dark:text-steel-300"><span class="w-1.5 h-1.5 rounded-full bg-electric-500"></span>Protection incendie (sprinklers)</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ÉNERGIE -->
+<section id="energie" class="py-24 bg-white dark:bg-navy-950 scroll-mt-24">
+  <div class="max-w-7xl mx-auto px-6 lg:px-10 grid lg:grid-cols-2 gap-16 items-center">
+    <div data-aos="fade-right">
+      <span class="w-14 h-14 rounded-2xl bg-gradient-to-br from-electric-500 to-cyan-500 flex items-center justify-center mb-6 shadow-glow"><svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" d="M12 3v3m0 12v3m9-9h-3M6 12H3m14.5-6.5l-2 2m-9 9l-2 2m0-13l2 2m9 9l2 2"/><circle cx="12" cy="12" r="4"/></svg></span>
+      <p class="section-eyebrow text-electric-600 dark:text-cyan-400 font-semibold text-xs uppercase mb-3">05 — Efficacité</p>
+      <h2 class="font-heading font-bold text-4xl text-navy-900 dark:text-white mb-5">Énergie & Automatisation</h2>
+      <p class="text-steel-600 dark:text-steel-300 leading-relaxed mb-6">Audit énergétique, intégration d'énergies renouvelables et automatisation des process industriels pour réduire durablement vos coûts d'exploitation.</p>
+      <ul class="grid sm:grid-cols-2 gap-3 text-sm">
+        <li class="flex items-center gap-2 text-steel-600 dark:text-steel-300"><span class="w-1.5 h-1.5 rounded-full bg-electric-500"></span>Audit & diagnostic énergétique</li>
+        <li class="flex items-center gap-2 text-steel-600 dark:text-steel-300"><span class="w-1.5 h-1.5 rounded-full bg-electric-500"></span>Solaire & énergies renouvelables</li>
+        <li class="flex items-center gap-2 text-steel-600 dark:text-steel-300"><span class="w-1.5 h-1.5 rounded-full bg-electric-500"></span>Automatisation industrielle</li>
+        <li class="flex items-center gap-2 text-steel-600 dark:text-steel-300"><span class="w-1.5 h-1.5 rounded-full bg-electric-500"></span>Optimisation de la consommation</li>
+      </ul>
+    </div>
+    <div class="rounded-3xl overflow-hidden shadow-premium-lg aspect-[4/3]" data-aos="fade-left"><img src="assets/img/plumbing-pump-room.jpg" class="w-full h-full object-cover" alt="Énergie et automatisation"></div>
+  </div>
+</section>
+
+<!-- INGÉNIERIE / BIM -->
+<section id="ingenierie" class="py-24 bg-steel-50 dark:bg-navy-900 scroll-mt-24">
+  <div class="max-w-7xl mx-auto px-6 lg:px-10 grid lg:grid-cols-2 gap-16 items-center">
+    <div class="rounded-3xl overflow-hidden shadow-premium-lg aspect-[4/3] order-2 lg:order-1" data-aos="fade-right"><img src="assets/img/engineering-blueprint.jpg" class="w-full h-full object-cover" alt="Ingénierie et BIM"></div>
+    <div class="order-1 lg:order-2" data-aos="fade-left">
+      <span class="w-14 h-14 rounded-2xl bg-gradient-to-br from-electric-500 to-cyan-500 flex items-center justify-center mb-6 shadow-glow"><svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" d="M4 4h16v16H4z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" d="M4 9h16M9 4v16"/></svg></span>
+      <p class="section-eyebrow text-electric-600 dark:text-cyan-400 font-semibold text-xs uppercase mb-3">06 — Études & conception</p>
+      <h2 class="font-heading font-bold text-4xl text-navy-900 dark:text-white mb-5">Ingénierie & BIM</h2>
+      <p class="text-steel-600 dark:text-steel-300 leading-relaxed mb-6">Études techniques détaillées, modélisation BIM multi-lots et production de plans d'exécution précis, pour une coordination optimale entre tous les corps de métier.</p>
+      <ul class="grid sm:grid-cols-2 gap-3 text-sm">
+        <li class="flex items-center gap-2 text-steel-600 dark:text-steel-300"><span class="w-1.5 h-1.5 rounded-full bg-electric-500"></span>Modélisation BIM 3D</li>
+        <li class="flex items-center gap-2 text-steel-600 dark:text-steel-300"><span class="w-1.5 h-1.5 rounded-full bg-electric-500"></span>Plans d'exécution détaillés</li>
+        <li class="flex items-center gap-2 text-steel-600 dark:text-steel-300"><span class="w-1.5 h-1.5 rounded-full bg-electric-500"></span>Simulation thermique & fluidique</li>
+        <li class="flex items-center gap-2 text-steel-600 dark:text-steel-300"><span class="w-1.5 h-1.5 rounded-full bg-electric-500"></span>Coordination multi-corps d'état</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="py-24 relative overflow-hidden">
+  <div class="absolute inset-0 hero-bg"></div>
+  <div class="absolute inset-0 hero-grid opacity-30"></div>
+  <div class="relative max-w-4xl mx-auto px-6 lg:px-10 text-center" data-aos="zoom-in">
+    <h2 class="font-heading font-bold text-4xl lg:text-5xl text-white mb-6">Un projet en tête ?</h2>
+    <p class="text-steel-300 text-lg mb-10 max-w-xl mx-auto">Parlons de vos besoins techniques et construisons ensemble la solution adaptée.</p>
+    <a href="contact.html" class="btn-primary inline-flex items-center gap-2 text-white font-semibold px-8 py-4 rounded-full">Demander un devis</a>
+  </div>
+</section>
+</main>
+
+<footer class="bg-navy-950 pt-20 pb-8 border-t border-white/5">
+  <div class="max-w-7xl mx-auto px-6 lg:px-10">
+    <div class="grid lg:grid-cols-12 gap-12 pb-16">
+      <div class="lg:col-span-4">
+        <a href="index.html" class="flex items-center gap-3 mb-6">
+          <img src="assets/img/logo-fi2e.png" alt="FI2E" class="h-14 w-auto">
+        </a>
+        <p class="text-steel-400 text-sm leading-relaxed mb-6">Facility Integrated Engineering & Energy — Votre partenaire en solutions intégrées du bâtiment.</p>
+      </div>
+      <div class="lg:col-span-2">
+        <h4 class="font-heading font-semibold text-white mb-5">Navigation</h4>
+        <ul class="space-y-3 text-sm text-steel-400">
+          <li><a href="index.html" class="hover:text-cyan-400 transition-colors">Accueil</a></li>
+          <li><a href="entreprise.html" class="hover:text-cyan-400 transition-colors">Entreprise</a></li>
+          <li><a href="realisations.html" class="hover:text-cyan-400 transition-colors">Réalisations</a></li>
+          <li><a href="carrieres.html" class="hover:text-cyan-400 transition-colors">Carrières</a></li>
+        </ul>
+      </div>
+      <div class="lg:col-span-2">
+        <h4 class="font-heading font-semibold text-white mb-5">Expertises</h4>
+        <ul class="space-y-3 text-sm text-steel-400">
+          <li><a href="#hvac" class="hover:text-cyan-400 transition-colors">HVAC</a></li>
+          <li><a href="#electricite" class="hover:text-cyan-400 transition-colors">Électricité</a></li>
+          <li><a href="#gtb" class="hover:text-cyan-400 transition-colors">GTB</a></li>
+          <li><a href="#ingenierie" class="hover:text-cyan-400 transition-colors">BIM</a></li>
+        </ul>
+      </div>
+      <div class="lg:col-span-4">
+        <h4 class="font-heading font-semibold text-white mb-5">Contact</h4>
+        <div class="space-y-2 text-sm text-steel-400">
+          <p>Logpom, B.P. 10311, Douala — Cameroun</p>
+          <p>+237 699 05 54 75</p>
+          <p>f2iegroup@gmail.com</p>
+        </div>
+      </div>
+    </div>
+    <div class="pt-8 border-t border-white/5 flex flex-wrap justify-between items-center gap-4 text-xs text-steel-500">
+      <p>© <span data-year>2026</span> FI2E. Tous droits réservés.</p>
+      <div class="flex gap-6"><a href="#" class="hover:text-cyan-400 transition-colors">Mentions légales</a><a href="#" class="hover:text-cyan-400 transition-colors">Confidentialité</a></div>
+    </div>
+  </div>
+</footer>
+
+<button id="back-to-top" class="fixed bottom-8 right-8 z-40 w-12 h-12 rounded-full btn-primary text-white flex items-center justify-center opacity-0 pointer-events-none" aria-label="Retour en haut">
+  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7"/></svg>
+</button>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
+<script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

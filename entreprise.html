@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Entreprise — FI2E | Notre histoire, mission & valeurs</title>
+<meta name="description" content="Découvrez l'histoire de FI2E, fondée en 2020 à Douala : notre mission, vision, valeurs et l'équipe d'ingénieurs qui porte notre ambition dans les solutions intégrées du bâtiment.">
+<link rel="icon" type="image/png" href="assets/img/logo-fi2e.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="assets/js/tailwind-config.js"></script>
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="font-body antialiased bg-white text-navy-900 dark:bg-navy-950 dark:text-steel-100">
+
+<div id="page-loader"><div class="loader-mark"><img src="assets/img/logo-fi2e.png" alt="FI2E"></div></div>
+<div id="cursor-dot"></div><div id="cursor-ring"></div>
+
+<!-- =================== NAV =================== -->
+<header>
+<nav id="site-nav" class="fixed top-0 left-0 w-full z-50 py-5">
+  <div class="max-w-7xl mx-auto px-6 lg:px-10 flex items-center justify-between">
+    <a href="index.html" class="flex items-center gap-3 group">
+      <img src="assets/img/logo-fi2e.png" alt="FI2E - Facility Integrated Engineering & Energy" class="h-14 w-auto group-hover:scale-105 transition-transform">
+    </a>
+    <ul class="hidden lg:flex items-center gap-9 text-sm font-medium text-white/90">
+      <li><a href="index.html" class="nav-link">Accueil</a></li>
+      <li><a href="entreprise.html" class="nav-link active">Entreprise</a></li>
+      <li><a href="services.html" class="nav-link">Services</a></li>
+      <li><a href="expertises.html" class="nav-link">Expertises</a></li>
+      <li><a href="realisations.html" class="nav-link">Réalisations</a></li>
+      <li><a href="projets.html" class="nav-link">Projets</a></li>
+      <li><a href="partenaires.html" class="nav-link">Partenaires</a></li>
+      <li><a href="carrieres.html" class="nav-link">Carrières</a></li>
+      <li><a href="blog.html" class="nav-link">Blog</a></li>
+      <li><a href="contact.html" class="nav-link">Contact</a></li>
+    </ul>
+    <div class="flex items-center gap-4">
+      <button data-dark-toggle class="hidden sm:flex w-9 h-9 rounded-full items-center justify-center text-white/80 hover:text-white border border-white/20 hover:border-white/40 transition-colors">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.36 6.36l-.7-.7M6.34 6.34l-.7-.7m12.02 0l-.7.7M6.34 17.66l-.7.7M12 8a4 4 0 100 8 4 4 0 000-8z"/></svg>
+      </button>
+      <a href="contact.html" class="btn-primary hidden sm:inline-flex items-center gap-2 text-white text-sm font-semibold px-5 py-3 rounded-full">
+        Demander un devis
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+      </a>
+      <button id="menu-btn" class="lg:hidden text-white w-10 h-10 flex items-center justify-center">
+        <svg id="icon-open" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        <svg id="icon-close" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+      </button>
+    </div>
+  </div>
+  <div id="mobile-menu" class="hidden lg:hidden fixed inset-0 top-0 bg-navy-950 z-40 pt-24 px-6 overflow-y-auto h-screen">
+    <ul class="flex flex-col gap-1 text-lg font-heading font-medium text-white">
+      <li><a href="index.html" class="block py-3 border-b border-white/10">Accueil</a></li>
+      <li><a href="entreprise.html" class="block py-3 border-b border-white/10">Entreprise</a></li>
+      <li><a href="services.html" class="block py-3 border-b border-white/10">Services</a></li>
+      <li><a href="expertises.html" class="block py-3 border-b border-white/10">Expertises</a></li>
+      <li><a href="realisations.html" class="block py-3 border-b border-white/10">Réalisations</a></li>
+      <li><a href="projets.html" class="block py-3 border-b border-white/10">Projets</a></li>
+      <li><a href="partenaires.html" class="block py-3 border-b border-white/10">Partenaires</a></li>
+      <li><a href="carrieres.html" class="block py-3 border-b border-white/10">Carrières</a></li>
+      <li><a href="blog.html" class="block py-3 border-b border-white/10">Blog</a></li>
+      <li><a href="contact.html" class="block py-3 border-b border-white/10">Contact</a></li>
+    </ul>
+    <a href="contact.html" class="btn-primary mt-8 inline-flex items-center justify-center gap-2 text-white text-sm font-semibold px-6 py-4 rounded-full w-full">Demander un devis</a>
+  </div>
+</nav>
+</header>
+
+<main>
+<!-- =================== PAGE HEADER =================== -->
+<section class="relative pt-44 pb-24 hero-bg overflow-hidden">
+  <div class="absolute inset-0 hero-grid"></div>
+  <div class="absolute -top-40 -right-20 w-[500px] h-[500px] bg-electric-500/20 rounded-full blur-3xl"></div>
+  <div class="relative max-w-7xl mx-auto px-6 lg:px-10 text-center">
+    <p class="section-eyebrow text-cyan-400 font-semibold text-xs uppercase mb-4" data-aos="fade-up">Depuis 2020</p>
+    <h1 class="font-heading font-extrabold text-5xl lg:text-6xl text-white mb-6" data-aos="fade-up" data-aos-delay="100">L'entreprise FI2E</h1>
+    <p class="text-steel-300 text-lg max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="200">Facility Integrated Engineering & Energy — une équipe camerounaise engagée pour des bâtiments plus performants, plus intelligents et plus durables.</p>
+  </div>
+</section>
+
+<!-- =================== PRÉSENTATION =================== -->
+<section class="py-28 bg-white dark:bg-navy-950">
+  <div class="max-w-7xl mx-auto px-6 lg:px-10 grid lg:grid-cols-2 gap-16 items-center">
+    <div data-aos="fade-right">
+      <p class="section-eyebrow text-electric-600 dark:text-cyan-400 font-semibold text-xs uppercase mb-4">Présentation</p>
+      <h2 class="font-heading font-bold text-4xl text-navy-900 dark:text-white mb-6 leading-tight">Une entreprise camerounaise, une ambition régionale</h2>
+      <p class="text-steel-600 dark:text-steel-300 leading-relaxed mb-5">
+        FI2E (Facility Integrated Engineering & Energy) est une entreprise camerounaise fondée en 2020 à Douala, spécialisée dans les solutions MEP intégrées : Mécanique, Électricité et Plomberie. Nous accompagnons industriels, institutions financières, administrations et promoteurs immobiliers dans la conception, la réalisation et la maintenance de leurs infrastructures techniques.
+      </p>
+      <p class="text-steel-600 dark:text-steel-300 leading-relaxed mb-8">
+        Notre différence : une approche intégrée qui réunit ingénierie, exécution et performance énergétique sous un même toit, pour livrer des installations fiables, durables et parfaitement adaptées aux réalités du terrain en Afrique Centrale.
+      </p>
+      <div class="grid grid-cols-2 gap-6">
+        <div class="p-5 rounded-2xl bg-steel-50 dark:bg-navy-900">
+          <p class="font-heading font-extrabold text-3xl text-electric-600 dark:text-cyan-400"><span data-counter="2020">0</span></p>
+          <p class="text-sm text-steel-500 mt-1">Année de création</p>
+        </div>
+        <div class="p-5 rounded-2xl bg-steel-50 dark:bg-navy-900">
+          <p class="font-heading font-extrabold text-3xl text-electric-600 dark:text-cyan-400"><span data-counter="10">0</span>M FCFA</p>
+          <p class="text-sm text-steel-500 mt-1">Capital social</p>
+        </div>
+      </div>
+    </div>
+    <div class="relative" data-aos="fade-left">
+      <div class="rounded-3xl overflow-hidden shadow-premium-lg aspect-square">
+        <img src="assets/img/fabrication-workshop.jpg" class="w-full h-full object-cover" alt="Bureaux FI2E">
+      </div>
+      <div class="absolute -bottom-8 -left-8 glass dark:glass-dark rounded-2xl p-6 shadow-premium-lg">
+        <p class="font-heading font-extrabold text-3xl text-electric-600 dark:text-cyan-400">≈<span data-counter="3">0</span> Mds FCFA</p>
+        <p class="text-sm text-steel-500 mt-1">Valeur estimée en 2025</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =================== TIMELINE HISTOIRE =================== -->
+<section class="py-28 bg-steel-50 dark:bg-navy-900">
+  <div class="max-w-7xl mx-auto px-6 lg:px-10">
+    <div class="text-center max-w-2xl mx-auto mb-20" data-aos="fade-up">
+      <p class="section-eyebrow text-electric-600 dark:text-cyan-400 font-semibold text-xs uppercase mb-4">Notre histoire</p>
+      <h2 class="font-heading font-bold text-4xl lg:text-5xl text-navy-900 dark:text-white">Une croissance construite étape par étape</h2>
+    </div>
+    <div class="relative max-w-3xl mx-auto">
+      <div class="absolute left-6 lg:left-1/2 top-0 bottom-0 w-px timeline-line lg:-translate-x-1/2"></div>
+
+      <div class="relative pl-16 lg:pl-0 lg:grid lg:grid-cols-2 lg:gap-10 mb-14" data-aos="fade-up">
+        <div class="absolute left-6 lg:left-1/2 top-1 w-4 h-4 rounded-full bg-gradient-to-br from-electric-500 to-cyan-400 -translate-x-1/2 shadow-glow z-10"></div>
+        <div class="lg:text-right lg:pr-10"><span class="font-heading font-extrabold text-2xl text-electric-600 dark:text-cyan-400">2020</span><h3 class="font-heading font-semibold text-lg text-navy-900 dark:text-white mt-1">Fondation de FI2E</h3><p class="text-steel-500 text-sm mt-2">Création de l'entreprise à Douala avec un capital social de 10 millions FCFA et une vision claire : intégrer mécanique, électricité et plomberie au service de la performance.</p></div>
+        <div></div>
+      </div>
+
+      <div class="relative pl-16 lg:pl-0 lg:grid lg:grid-cols-2 lg:gap-10 mb-14" data-aos="fade-up">
+        <div class="absolute left-6 lg:left-1/2 top-1 w-4 h-4 rounded-full bg-gradient-to-br from-electric-500 to-cyan-400 -translate-x-1/2 shadow-glow z-10"></div>
+        <div></div>
+        <div class="lg:pl-10"><span class="font-heading font-extrabold text-2xl text-electric-600 dark:text-cyan-400">2021—2022</span><h3 class="font-heading font-semibold text-lg text-navy-900 dark:text-white mt-1">Premiers grands contrats</h3><p class="text-steel-500 text-sm mt-2">Montée en puissance sur des projets industriels et bancaires, structuration des équipes techniques et certification progressive des ingénieurs.</p></div>
+      </div>
+
+      <div class="relative pl-16 lg:pl-0 lg:grid lg:grid-cols-2 lg:gap-10 mb-14" data-aos="fade-up">
+        <div class="absolute left-6 lg:left-1/2 top-1 w-4 h-4 rounded-full bg-gradient-to-br from-electric-500 to-cyan-400 -translate-x-1/2 shadow-glow z-10"></div>
+        <div class="lg:text-right lg:pr-10"><span class="font-heading font-extrabold text-2xl text-electric-600 dark:text-cyan-400">2023</span><h3 class="font-heading font-semibold text-lg text-navy-900 dark:text-white mt-1">Partenariats stratégiques</h3><p class="text-steel-500 text-sm mt-2">Accords avec des fabricants internationaux (Carrier, CIAT, Premtech) pour renforcer notre offre HVAC et énergie.</p></div>
+        <div></div>
+      </div>
+
+      <div class="relative pl-16 lg:pl-0 lg:grid lg:grid-cols-2 lg:gap-10 mb-14" data-aos="fade-up">
+        <div class="absolute left-6 lg:left-1/2 top-1 w-4 h-4 rounded-full bg-gradient-to-br from-electric-500 to-cyan-400 -translate-x-1/2 shadow-glow z-10"></div>
+        <div></div>
+        <div class="lg:pl-10"><span class="font-heading font-extrabold text-2xl text-electric-600 dark:text-cyan-400">2024</span><h3 class="font-heading font-semibold text-lg text-navy-900 dark:text-white mt-1">Projets d'infrastructures majeures</h3><p class="text-steel-500 text-sm mt-2">Intervention sur des infrastructures d'envergure nationale, dont des installations pour la BEAC et l'aéroport international de Yaoundé.</p></div>
+      </div>
+
+      <div class="relative pl-16 lg:pl-0 lg:grid lg:grid-cols-2 lg:gap-10" data-aos="fade-up">
+        <div class="absolute left-6 lg:left-1/2 top-1 w-4 h-4 rounded-full bg-gradient-to-br from-electric-500 to-cyan-400 -translate-x-1/2 shadow-glow z-10 pulse-ring"></div>
+        <div class="lg:text-right lg:pr-10"><span class="font-heading font-extrabold text-2xl text-electric-600 dark:text-cyan-400">2025</span><h3 class="font-heading font-semibold text-lg text-navy-900 dark:text-white mt-1">Valorisation ≈ 3 Mds FCFA</h3><p class="text-steel-500 text-sm mt-2">Plus de 25 collaborateurs, 10+ projets livrés et un taux de satisfaction client de 97%. FI2E s'impose comme un acteur de référence des solutions MEP en Afrique Centrale.</p></div>
+        <div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =================== MISSION / VISION / VALEURS =================== -->
+<section class="py-28 bg-white dark:bg-navy-950">
+  <div class="max-w-7xl mx-auto px-6 lg:px-10">
+    <div class="grid lg:grid-cols-3 gap-8 mb-8">
+      <div class="rounded-3xl p-10 bg-gradient-to-br from-navy-900 to-navy-800 text-white relative overflow-hidden" data-aos="fade-up">
+        <div class="absolute -right-10 -bottom-10 w-40 h-40 bg-electric-500/20 rounded-full blur-2xl"></div>
+        <span class="w-14 h-14 rounded-2xl bg-white/10 flex items-center justify-center mb-6"><svg class="w-7 h-7 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg></span>
+        <h3 class="font-heading font-bold text-2xl mb-4">Notre raison d'être</h3>
+        <p class="text-steel-300 leading-relaxed">Façonner l'avenir de l'environnement bâti en étant le pionnier de systèmes MEP intelligents et interconnectés qui donnent du pouvoir aux communautés et aux entreprises. Nous aspirons à être le leader dans la création de bâtiments intelligents, durables et performants qui redéfinissent le confort, la sécurité et l'excellence opérationnelle.</p>
+      </div>
+      <div class="rounded-3xl p-10 bg-gradient-to-br from-electric-600 to-electric-500 text-white relative overflow-hidden" data-aos="fade-up" data-aos-delay="100">
+        <div class="absolute -right-10 -bottom-10 w-40 h-40 bg-white/10 rounded-full blur-2xl"></div>
+        <span class="w-14 h-14 rounded-2xl bg-white/15 flex items-center justify-center mb-6"><svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg></span>
+        <h3 class="font-heading font-bold text-2xl mb-4">Notre vision</h3>
+        <p class="text-white/85 leading-relaxed">Transformer l'industrie MEP en y établissant de nouvelles références d'excellence, en nous positionnant comme le partenaire privilégié des clients en quête de systèmes de bâtiment intelligents, durables et à la pointe de la technologie.</p>
+      </div>
+      <div class="rounded-3xl p-10 bg-gradient-to-br from-cyan-600 to-cyan-500 text-white relative overflow-hidden" data-aos="fade-up" data-aos-delay="200">
+        <div class="absolute -right-10 -bottom-10 w-40 h-40 bg-white/10 rounded-full blur-2xl"></div>
+        <span class="w-14 h-14 rounded-2xl bg-white/15 flex items-center justify-center mb-6"><svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" d="M12 2c3 4 6 7.5 6 11a6 6 0 11-12 0c0-3.5 3-7 6-11z"/></svg></span>
+        <h3 class="font-heading font-bold text-2xl mb-4">Notre mission</h3>
+        <p class="text-white/85 leading-relaxed">Notre plus grande valeur réside dans notre concentration inébranlable sur le succès de nos clients : une solution sur mesure pour chaque projet, dans un processus collaboratif, transparent, de la conceptualisation initiale à la remise finale.</p>
+      </div>
+    </div>
+
+    <div class="mt-20">
+      <div class="text-center max-w-2xl mx-auto mb-14" data-aos="fade-up">
+        <p class="section-eyebrow text-electric-600 dark:text-cyan-400 font-semibold text-xs uppercase mb-4">Nos valeurs</p>
+        <h2 class="font-heading font-bold text-4xl text-navy-900 dark:text-white">Ce qui guide chacune de nos décisions</h2>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="p-8 rounded-2xl border border-steel-100 dark:border-navy-800 text-center hover:shadow-premium transition-all" data-aos="fade-up" data-aos-delay="0">
+          <span class="w-14 h-14 mx-auto rounded-2xl bg-electric-50 dark:bg-navy-800 flex items-center justify-center text-electric-600 dark:text-cyan-400 mb-4"><svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg></span>
+          <h3 class="font-heading font-semibold text-navy-900 dark:text-white mb-2">Intégrité</h3>
+          <p class="text-sm text-steel-500">Transparence et honnêteté dans chaque engagement.</p>
+        </div>
+        <div class="p-8 rounded-2xl border border-steel-100 dark:border-navy-800 text-center hover:shadow-premium transition-all" data-aos="fade-up" data-aos-delay="100">
+          <span class="w-14 h-14 mx-auto rounded-2xl bg-electric-50 dark:bg-navy-800 flex items-center justify-center text-electric-600 dark:text-cyan-400 mb-4"><svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg></span>
+          <h3 class="font-heading font-semibold text-navy-900 dark:text-white mb-2">Innovation</h3>
+          <p class="text-sm text-steel-500">Adoption continue des meilleures technologies.</p>
+        </div>
+        <div class="p-8 rounded-2xl border border-steel-100 dark:border-navy-800 text-center hover:shadow-premium transition-all" data-aos="fade-up" data-aos-delay="200">
+          <span class="w-14 h-14 mx-auto rounded-2xl bg-electric-50 dark:bg-navy-800 flex items-center justify-center text-electric-600 dark:text-cyan-400 mb-4"><svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" d="M12 8c-1.5 0-4 1-4 4s2.5 4 4 4 4-1 4-4-2.5-4-4-4z"/></svg></span>
+          <h3 class="font-heading font-semibold text-navy-900 dark:text-white mb-2">Excellence</h3>
+          <p class="text-sm text-steel-500">Rigueur et qualité d'exécution sans compromis.</p>
+        </div>
+        <div class="p-8 rounded-2xl border border-steel-100 dark:border-navy-800 text-center hover:shadow-premium transition-all" data-aos="fade-up" data-aos-delay="300">
+          <span class="w-14 h-14 mx-auto rounded-2xl bg-electric-50 dark:bg-navy-800 flex items-center justify-center text-electric-600 dark:text-cyan-400 mb-4"><svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" d="M17 20h5v-2a4 4 0 00-3-3.87M9 20H4v-2a4 4 0 013-3.87m6-1.13a4 4 0 10-4-4 4 4 0 004 4zm6 0a4 4 0 10-4-4"/></svg></span>
+          <h3 class="font-heading font-semibold text-navy-900 dark:text-white mb-2">Esprit d'équipe</h3>
+          <p class="text-sm text-steel-500">Collaboration étroite entre experts pluridisciplinaires.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =================== APPROCHE QUALITÉ =================== -->
+<section class="py-28 bg-navy-950 relative overflow-hidden">
+  <div class="absolute inset-0 hero-grid opacity-40"></div>
+  <div class="relative max-w-7xl mx-auto px-6 lg:px-10 grid lg:grid-cols-2 gap-16 items-center">
+    <div data-aos="fade-right">
+      <p class="section-eyebrow text-cyan-400 font-semibold text-xs uppercase mb-4">Approche qualité</p>
+      <h2 class="font-heading font-bold text-4xl text-white mb-6">Une exigence de qualité à chaque phase</h2>
+      <p class="text-steel-300 leading-relaxed mb-8">Chaque projet FI2E suit un protocole strict de contrôle qualité, de l'étude initiale aux tests finaux, garantissant conformité aux normes internationales et satisfaction durable de nos clients.</p>
+      <ul class="space-y-4">
+        <li class="flex items-center gap-3 text-steel-200"><span class="w-2 h-2 rounded-full bg-cyan-400"></span>Contrôles qualité à chaque étape du chantier</li>
+        <li class="flex items-center gap-3 text-steel-200"><span class="w-2 h-2 rounded-full bg-cyan-400"></span>Tests de mise en service et de performance</li>
+        <li class="flex items-center gap-3 text-steel-200"><span class="w-2 h-2 rounded-full bg-cyan-400"></span>Documentation technique complète (as-built, BIM)</li>
+        <li class="flex items-center gap-3 text-steel-200"><span class="w-2 h-2 rounded-full bg-cyan-400"></span>Suivi post-livraison et maintenance préventive</li>
+      </ul>
+    </div>
+    <div class="grid grid-cols-2 gap-6" data-aos="fade-left">
+      <div class="glass-dark rounded-2xl p-8 text-center"><p class="font-heading font-extrabold text-4xl text-white"><span data-counter="97" data-suffix="%">0</span></p><p class="text-xs text-steel-400 mt-2 uppercase">Satisfaction client</p></div>
+      <div class="glass-dark rounded-2xl p-8 text-center"><p class="font-heading font-extrabold text-4xl text-white"><span data-counter="10" data-suffix="+">0</span></p><p class="text-xs text-steel-400 mt-2 uppercase">Projets livrés</p></div>
+      <div class="glass-dark rounded-2xl p-8 text-center"><p class="font-heading font-extrabold text-4xl text-white"><span data-counter="25" data-suffix="+">0</span></p><p class="text-xs text-steel-400 mt-2 uppercase">Collaborateurs</p></div>
+      <div class="glass-dark rounded-2xl p-8 text-center"><p class="font-heading font-extrabold text-4xl text-white"><span data-counter="6">0</span></p><p class="text-xs text-steel-400 mt-2 uppercase">Ans d'expertise</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- =================== ÉQUIPE COMPLÈTE =================== -->
+<section id="equipe" class="py-28 bg-white dark:bg-navy-950 scroll-mt-24">
+  <div class="max-w-7xl mx-auto px-6 lg:px-10">
+    <div class="text-center max-w-2xl mx-auto mb-16" data-aos="fade-up">
+      <p class="section-eyebrow text-electric-600 dark:text-cyan-400 font-semibold text-xs uppercase mb-4">Notre équipe</p>
+      <h2 class="font-heading font-bold text-4xl lg:text-5xl text-navy-900 dark:text-white">Une gouvernance solide, des ingénieurs certifiés</h2>
+    </div>
+
+    <!-- Chairman spotlight -->
+    <div class="grid lg:grid-cols-2 gap-12 items-center mb-20 rounded-3xl bg-steel-50 dark:bg-navy-900 p-10 lg:p-14" data-aos="fade-up">
+      <div class="relative">
+        <div class="rounded-2xl overflow-hidden shadow-premium-lg aspect-[4/5] max-w-sm">
+          <img src="assets/img/chairman-portrait.png" class="w-full h-full object-cover" alt="MBOCK Emanuel, Chairman FI2E">
+        </div>
+      </div>
+      <div>
+        <span class="text-xs font-semibold text-electric-600 dark:text-cyan-400 uppercase tracking-wide">Company Chairman / Chief of Task Force</span>
+        <h3 class="font-heading font-bold text-3xl text-navy-900 dark:text-white mt-2 mb-4">MBOCK Emanuel</h3>
+        <p class="text-steel-600 dark:text-steel-300 leading-relaxed mb-6">MBOCK Emanuel pilote les initiatives stratégiques et la croissance à long terme de FI2E, fort de plus de 25 ans d'expérience dans la conservation et le développement de projets. Il allie une connaissance approfondie des enjeux du secteur à une expertise en technologies de l'information, intégrant les tendances les plus innovantes dans la stratégie de l'entreprise pour garantir l'excellence et une progression durable.</p>
+        <div class="flex flex-wrap gap-3">
+          <span class="px-4 py-2 rounded-full bg-white dark:bg-navy-800 text-xs font-semibold text-navy-700 dark:text-steel-200 shadow-sm">Leadership stratégique</span>
+          <span class="px-4 py-2 rounded-full bg-white dark:bg-navy-800 text-xs font-semibold text-navy-700 dark:text-steel-200 shadow-sm">Développement de projets</span>
+          <span class="px-4 py-2 rounded-full bg-white dark:bg-navy-800 text-xs font-semibold text-navy-700 dark:text-steel-200 shadow-sm">25+ ans d'expérience</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Second leader -->
+    <div class="grid lg:grid-cols-2 gap-12 items-center mb-20 rounded-3xl bg-steel-50 dark:bg-navy-900 p-10 lg:p-14" data-aos="fade-up">
+      <div class="order-2 lg:order-1">
+        <span class="text-xs font-semibold text-electric-600 dark:text-cyan-400 uppercase tracking-wide">Project Development Expert</span>
+        <h3 class="font-heading font-bold text-3xl text-navy-900 dark:text-white mt-2 mb-4">Leader visionnaire CVC / MEP</h3>
+        <p class="text-steel-600 dark:text-steel-300 leading-relaxed mb-6">Référence forte de plus de 20 ans d'expérience dans la conduite de projets complexes, notre expert en développement de projets est un conférencier reconnu dans le domaine du Chauffage, Ventilation et Climatisation (CVC).</p>
+        <div class="flex flex-wrap gap-3">
+          <span class="px-4 py-2 rounded-full bg-white dark:bg-navy-800 text-xs font-semibold text-navy-700 dark:text-steel-200 shadow-sm">CVC / MEP</span>
+          <span class="px-4 py-2 rounded-full bg-white dark:bg-navy-800 text-xs font-semibold text-navy-700 dark:text-steel-200 shadow-sm">20+ ans d'expérience</span>
+          <span class="px-4 py-2 rounded-full bg-white dark:bg-navy-800 text-xs font-semibold text-navy-700 dark:text-steel-200 shadow-sm">Conférencier CVC</span>
+        </div>
+      </div>
+      <div class="relative order-1 lg:order-2">
+        <div class="rounded-2xl overflow-hidden shadow-premium-lg aspect-[4/5] max-w-sm mx-auto">
+          <img src="assets/img/team-site-visit.png" class="w-full h-full object-cover" alt="Équipe FI2E sur chantier">
+        </div>
+      </div>
+    </div>
+
+    <div class="grid sm:grid-cols-3 gap-8">
+      <div class="text-center card-float bg-steel-50 dark:bg-navy-900 rounded-2xl p-8 shadow-premium" data-aos="fade-up" data-aos-delay="0">
+        <span class="w-16 h-16 mx-auto rounded-2xl bg-gradient-to-br from-electric-500 to-cyan-500 flex items-center justify-center mb-5 shadow-glow"><svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" d="M17 20h5v-2a4 4 0 00-3-3.87M9 20H4v-2a4 4 0 013-3.87m6-1.13a4 4 0 10-4-4 4 4 0 004 4zm6 0a4 4 0 10-4-4"/></svg></span>
+        <h3 class="font-heading font-bold text-lg text-navy-900 dark:text-white mb-2">Ingénieurs certifiés</h3>
+        <p class="text-steel-500 text-sm">Techniciens expérimentés spécialisés dans l'ensemble des disciplines MEP.</p>
+      </div>
+      <div class="text-center card-float bg-steel-50 dark:bg-navy-900 rounded-2xl p-8 shadow-premium" data-aos="fade-up" data-aos-delay="100">
+        <span class="w-16 h-16 mx-auto rounded-2xl bg-gradient-to-br from-electric-500 to-cyan-500 flex items-center justify-center mb-5 shadow-glow"><svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg></span>
+        <h3 class="font-heading font-bold text-lg text-navy-900 dark:text-white mb-2">15 à 20 ans d'expérience</h3>
+        <p class="text-steel-500 text-sm">Nos responsables de projets supervisent des chantiers complexes depuis plus de 15 ans.</p>
+      </div>
+      <div class="text-center card-float bg-steel-50 dark:bg-navy-900 rounded-2xl p-8 shadow-premium" data-aos="fade-up" data-aos-delay="200">
+        <span class="w-16 h-16 mx-auto rounded-2xl bg-gradient-to-br from-electric-500 to-cyan-500 flex items-center justify-center mb-5 shadow-glow"><svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg></span>
+        <h3 class="font-heading font-bold text-lg text-navy-900 dark:text-white mb-2">PMP · ASHRAE · LEED</h3>
+        <p class="text-steel-500 text-sm">Plusieurs de nos experts sont certifiés PMP, ASHRAE et formés aux normes LEED.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =================== CERTIFICATIONS =================== -->
+<section class="py-24 bg-steel-50 dark:bg-navy-900">
+  <div class="max-w-7xl mx-auto px-6 lg:px-10 text-center">
+    <p class="section-eyebrow text-electric-600 dark:text-cyan-400 font-semibold text-xs uppercase mb-4" data-aos="fade-up">Certifications & normes</p>
+    <h2 class="font-heading font-bold text-4xl text-navy-900 dark:text-white mb-14" data-aos="fade-up">Des standards reconnus internationalement</h2>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+      <div class="bg-white dark:bg-navy-800 rounded-2xl p-8 shadow-premium" data-aos="zoom-in" data-aos-delay="0"><p class="font-heading font-bold text-navy-900 dark:text-white">ISO 9001</p><p class="text-xs text-steel-500 mt-1">Management qualité</p></div>
+      <div class="bg-white dark:bg-navy-800 rounded-2xl p-8 shadow-premium" data-aos="zoom-in" data-aos-delay="100"><p class="font-heading font-bold text-navy-900 dark:text-white">NFPA / IEC</p><p class="text-xs text-steel-500 mt-1">Sécurité électrique</p></div>
+      <div class="bg-white dark:bg-navy-800 rounded-2xl p-8 shadow-premium" data-aos="zoom-in" data-aos-delay="200"><p class="font-heading font-bold text-navy-900 dark:text-white">ASHRAE</p><p class="text-xs text-steel-500 mt-1">Standards HVAC</p></div>
+      <div class="bg-white dark:bg-navy-800 rounded-2xl p-8 shadow-premium" data-aos="zoom-in" data-aos-delay="300"><p class="font-heading font-bold text-navy-900 dark:text-white">ISO 14001</p><p class="text-xs text-steel-500 mt-1">Management environnemental</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- =================== CTA =================== -->
+<section class="py-24 relative overflow-hidden">
+  <div class="absolute inset-0 hero-bg"></div>
+  <div class="absolute inset-0 hero-grid opacity-30"></div>
+  <div class="relative max-w-4xl mx-auto px-6 lg:px-10 text-center" data-aos="zoom-in">
+    <h2 class="font-heading font-bold text-4xl lg:text-5xl text-white mb-6">Envie de collaborer avec nous ?</h2>
+    <p class="text-steel-300 text-lg mb-10 max-w-xl mx-auto">Discutons de votre projet et voyons comment notre expertise peut vous accompagner.</p>
+    <a href="contact.html" class="btn-primary inline-flex items-center gap-2 text-white font-semibold px-8 py-4 rounded-full">Prendre contact</a>
+  </div>
+</section>
+</main>
+
+<!-- =================== FOOTER =================== -->
+<footer class="bg-navy-950 pt-20 pb-8 border-t border-white/5">
+  <div class="max-w-7xl mx-auto px-6 lg:px-10">
+    <div class="grid lg:grid-cols-12 gap-12 pb-16">
+      <div class="lg:col-span-4">
+        <a href="index.html" class="flex items-center gap-3 mb-6">
+          <img src="assets/img/logo-fi2e.png" alt="FI2E" class="h-14 w-auto">
+        </a>
+        <p class="text-steel-400 text-sm leading-relaxed mb-6">Facility Integrated Engineering & Energy — Votre partenaire en solutions intégrées du bâtiment : HVAC, électricité, plomberie, GTB et énergie.</p>
+        <div class="flex gap-3">
+          <a href="#" class="w-10 h-10 rounded-full border border-white/15 flex items-center justify-center text-steel-400 hover:text-white hover:border-cyan-400 transition-colors" aria-label="LinkedIn"><svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.22 8.24h4.56V23H.22V8.24zM8.16 8.24h4.37v2.01h.06c.61-1.15 2.1-2.36 4.32-2.36 4.62 0 5.47 3.04 5.47 7v8.11h-4.56v-7.19c0-1.72-.03-3.93-2.4-3.93-2.4 0-2.77 1.88-2.77 3.81V23H8.16V8.24z"/></svg></a>
+          <a href="#" class="w-10 h-10 rounded-full border border-white/15 flex items-center justify-center text-steel-400 hover:text-white hover:border-cyan-400 transition-colors" aria-label="Facebook"><svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.99 3.66 9.13 8.44 9.88v-6.99H7.9v-2.89h2.54V9.83c0-2.51 1.49-3.9 3.78-3.9 1.1 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.89h-2.34v6.99C18.34 21.13 22 16.99 22 12z"/></svg></a>
+          <a href="#" class="w-10 h-10 rounded-full border border-white/15 flex items-center justify-center text-steel-400 hover:text-white hover:border-cyan-400 transition-colors" aria-label="X"><svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M18.9 2H22l-7.6 8.7L23.3 22h-7l-5.5-7.2L4.5 22H1.4l8.1-9.3L1 2h7.2l5 6.6L18.9 2zm-1.2 18h1.7L6.4 3.9H4.6L17.7 20z"/></svg></a>
+          <a href="#" class="w-10 h-10 rounded-full border border-white/15 flex items-center justify-center text-steel-400 hover:text-white hover:border-cyan-400 transition-colors" aria-label="Instagram"><svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 3.25.15 4.77 1.69 4.92 4.92.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.15 3.23-1.66 4.77-4.92 4.92-1.27.06-1.64.07-4.85.07s-3.58-.01-4.85-.07c-3.26-.15-4.77-1.7-4.92-4.92-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85C2.38 3.9 3.9 2.38 7.15 2.23 8.42 2.17 8.8 2.16 12 2.16zM12 0C8.74 0 8.33.01 7.05.07c-4.35.2-6.78 2.62-6.98 6.98C.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.2 4.35 2.62 6.78 6.98 6.98C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c4.35-.2 6.78-2.62 6.98-6.98.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.2-4.35-2.62-6.78-6.98-6.98C15.67.01 15.26 0 12 0zm0 5.84A6.16 6.16 0 1012 18.16 6.16 6.16 0 0012 5.84zM12 16a4 4 0 110-8 4 4 0 010 8zm6.41-10.85a1.44 1.44 0 11-2.88 0 1.44 1.44 0 012.88 0z"/></svg></a>
+        </div>
+      </div>
+      <div class="lg:col-span-2">
+        <h4 class="font-heading font-semibold text-white mb-5">Navigation</h4>
+        <ul class="space-y-3 text-sm text-steel-400">
+          <li><a href="index.html" class="hover:text-cyan-400 transition-colors">Accueil</a></li>
+          <li><a href="entreprise.html" class="hover:text-cyan-400 transition-colors">Entreprise</a></li>
+          <li><a href="realisations.html" class="hover:text-cyan-400 transition-colors">Réalisations</a></li>
+          <li><a href="carrieres.html" class="hover:text-cyan-400 transition-colors">Carrières</a></li>
+          <li><a href="blog.html" class="hover:text-cyan-400 transition-colors">Blog</a></li>
+        </ul>
+      </div>
+      <div class="lg:col-span-2">
+        <h4 class="font-heading font-semibold text-white mb-5">Services</h4>
+        <ul class="space-y-3 text-sm text-steel-400">
+          <li><a href="expertises.html#hvac" class="hover:text-cyan-400 transition-colors">HVAC & Climatisation</a></li>
+          <li><a href="expertises.html#electricite" class="hover:text-cyan-400 transition-colors">Électricité industrielle</a></li>
+          <li><a href="expertises.html#gtb" class="hover:text-cyan-400 transition-colors">GTB / Smart Building</a></li>
+          <li><a href="expertises.html#plomberie" class="hover:text-cyan-400 transition-colors">Plomberie & Eau</a></li>
+          <li><a href="expertises.html#ingenierie" class="hover:text-cyan-400 transition-colors">Ingénierie & BIM</a></li>
+        </ul>
+      </div>
+      <div class="lg:col-span-4">
+        <h4 class="font-heading font-semibold text-white mb-5">Newsletter</h4>
+        <p class="text-sm text-steel-400 mb-4">Recevez nos actualités sur l'énergie et les bâtiments intelligents.</p>
+        <form data-newsletter-form class="flex gap-2">
+          <input type="email" required placeholder="Votre email" class="flex-1 bg-white/5 border border-white/10 rounded-full px-5 py-3 text-sm text-white placeholder:text-steel-500 focus:border-cyan-400 transition-colors">
+          <button type="submit" class="btn-primary text-white text-sm font-semibold px-5 py-3 rounded-full whitespace-nowrap">S'abonner</button>
+        </form>
+        <div class="mt-6 space-y-2 text-sm text-steel-400">
+          <p class="flex items-center gap-2"><svg class="w-4 h-4 text-cyan-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M17.657 16.657L13.414 20.9a2 2 0 01-2.828 0l-4.243-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg> Logpom, B.P. 10311, Douala — Cameroun</p>
+          <p class="flex items-center gap-2"><svg class="w-4 h-4 text-cyan-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg> +237 699 05 54 75</p>
+          <p class="flex items-center gap-2"><svg class="w-4 h-4 text-cyan-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg> f2iegroup@gmail.com</p>
+        </div>
+      </div>
+    </div>
+    <div class="pt-8 border-t border-white/5 flex flex-wrap justify-between items-center gap-4 text-xs text-steel-500">
+      <p>© <span data-year>2026</span> FI2E — Facility Integrated Engineering & Energy. Tous droits réservés.</p>
+      <div class="flex gap-6">
+        <a href="#" class="hover:text-cyan-400 transition-colors">Mentions légales</a>
+        <a href="#" class="hover:text-cyan-400 transition-colors">Politique de confidentialité</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<button id="back-to-top" class="fixed bottom-8 right-8 z-40 w-12 h-12 rounded-full btn-primary text-white flex items-center justify-center opacity-0 pointer-events-none" aria-label="Retour en haut">
+  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7"/></svg>
+</button>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
+<script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

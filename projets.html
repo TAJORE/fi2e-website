@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projets phares — FI2E | BEAC, groupes frigorifiques & plus</title>
+<meta name="description" content="Découvrez en détail les projets phares de FI2E : nouveau siège de la BEAC à Yaoundé, installations de groupes frigorifiques, fabrication sur site et notre méthodologie de travail.">
+<link rel="icon" type="image/png" href="assets/img/logo-fi2e.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="assets/js/tailwind-config.js"></script>
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="font-body antialiased bg-white text-navy-900 dark:bg-navy-950 dark:text-steel-100">
+
+<div id="page-loader"><div class="loader-mark"><img src="assets/img/logo-fi2e.png" alt="FI2E"></div></div>
+<div id="cursor-dot"></div><div id="cursor-ring"></div>
+
+<header>
+<nav id="site-nav" class="fixed top-0 left-0 w-full z-50 py-5">
+  <div class="max-w-7xl mx-auto px-6 lg:px-10 flex items-center justify-between">
+    <a href="index.html" class="flex items-center gap-3 group">
+      <img src="assets/img/logo-fi2e.png" alt="FI2E - Facility Integrated Engineering & Energy" class="h-14 w-auto group-hover:scale-105 transition-transform">
+    </a>
+    <ul class="hidden lg:flex items-center gap-9 text-sm font-medium text-white/90">
+      <li><a href="index.html" class="nav-link">Accueil</a></li>
+      <li><a href="entreprise.html" class="nav-link">Entreprise</a></li>
+      <li><a href="services.html" class="nav-link">Services</a></li>
+      <li><a href="expertises.html" class="nav-link">Expertises</a></li>
+      <li><a href="realisations.html" class="nav-link">Réalisations</a></li>
+      <li><a href="projets.html" class="nav-link active">Projets</a></li>
+      <li><a href="partenaires.html" class="nav-link">Partenaires</a></li>
+      <li><a href="carrieres.html" class="nav-link">Carrières</a></li>
+      <li><a href="blog.html" class="nav-link">Blog</a></li>
+      <li><a href="contact.html" class="nav-link">Contact</a></li>
+    </ul>
+    <div class="flex items-center gap-4">
+      <button data-dark-toggle class="hidden sm:flex w-9 h-9 rounded-full items-center justify-center text-white/80 hover:text-white border border-white/20 hover:border-white/40 transition-colors">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.36 6.36l-.7-.7M6.34 6.34l-.7-.7m12.02 0l-.7.7M6.34 17.66l-.7.7M12 8a4 4 0 100 8 4 4 0 000-8z"/></svg>
+      </button>
+      <a href="contact.html" class="btn-primary hidden sm:inline-flex items-center gap-2 text-white text-sm font-semibold px-5 py-3 rounded-full">
+        Demander un devis
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+      </a>
+      <button id="menu-btn" class="lg:hidden text-white w-10 h-10 flex items-center justify-center">
+        <svg id="icon-open" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        <svg id="icon-close" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+      </button>
+    </div>
+  </div>
+  <div id="mobile-menu" class="hidden lg:hidden fixed inset-0 top-0 bg-navy-950 z-40 pt-24 px-6 overflow-y-auto h-screen">
+    <ul class="flex flex-col gap-1 text-lg font-heading font-medium text-white">
+      <li><a href="index.html" class="block py-3 border-b border-white/10">Accueil</a></li>
+      <li><a href="entreprise.html" class="block py-3 border-b border-white/10">Entreprise</a></li>
+      <li><a href="services.html" class="block py-3 border-b border-white/10">Services</a></li>
+      <li><a href="expertises.html" class="block py-3 border-b border-white/10">Expertises</a></li>
+      <li><a href="realisations.html" class="block py-3 border-b border-white/10">Réalisations</a></li>
+      <li><a href="projets.html" class="block py-3 border-b border-white/10">Projets</a></li>
+      <li><a href="partenaires.html" class="block py-3 border-b border-white/10">Partenaires</a></li>
+      <li><a href="carrieres.html" class="block py-3 border-b border-white/10">Carrières</a></li>
+      <li><a href="blog.html" class="block py-3 border-b border-white/10">Blog</a></li>
+      <li><a href="contact.html" class="block py-3 border-b border-white/10">Contact</a></li>
+    </ul>
+    <a href="contact.html" class="btn-primary mt-8 inline-flex items-center justify-center gap-2 text-white text-sm font-semibold px-6 py-4 rounded-full w-full">Demander un devis</a>
+  </div>
+</nav>
+</header>
+
+<main>
+<section class="relative pt-44 pb-16 hero-bg overflow-hidden">
+  <div class="absolute inset-0 hero-grid"></div>
+  <div class="relative max-w-7xl mx-auto px-6 lg:px-10 text-center">
+    <p class="section-eyebrow text-cyan-400 font-semibold text-xs uppercase mb-4" data-aos="fade-up">Nos plus belles réussites</p>
+    <h1 class="font-heading font-extrabold text-5xl lg:text-6xl text-white mb-6" data-aos="fade-up" data-aos-delay="100">Projets phares</h1>
+    <p class="text-steel-300 text-lg max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="200">Des infrastructures stratégiques qui illustrent l'étendue de notre expertise MEP.</p>
+  </div>
+</section>
+
+<!-- BEAC -->
+<section id="beac" class="py-24 bg-white dark:bg-navy-950 scroll-mt-24">
+  <div class="max-w-7xl mx-auto px-6 lg:px-10 grid lg:grid-cols-2 gap-16 items-center">
+    <div class="rounded-3xl overflow-hidden shadow-premium-lg aspect-[4/3]" data-aos="fade-right"><img src="assets/img/site-yaounde-beac.jpg" class="w-full h-full object-cover" alt="BEAC"></div>
+    <div data-aos="fade-left">
+      <div class="flex flex-wrap gap-2 mb-5">
+        <span class="px-3 py-1 rounded-full bg-electric-50 dark:bg-navy-800 text-electric-600 dark:text-cyan-400 text-xs font-semibold">Banques</span>
+        <span class="px-3 py-1 rounded-full bg-electric-50 dark:bg-navy-800 text-electric-600 dark:text-cyan-400 text-xs font-semibold">Électricité</span>
+        <span class="px-3 py-1 rounded-full bg-electric-50 dark:bg-navy-800 text-electric-600 dark:text-cyan-400 text-xs font-semibold">GTB</span>
+      </div>
+      <h2 class="font-heading font-bold text-4xl text-navy-900 dark:text-white mb-4">BEAC — Nouveau siège national</h2>
+      <p class="text-steel-500 text-sm mb-6 flex items-center gap-2"><svg class="w-4 h-4 text-electric-500 dark:text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M17.657 16.657L13.414 20.9a2 2 0 01-2.828 0l-4.243-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>Yaoundé, Cameroun</p>
+      <p class="text-steel-600 dark:text-steel-300 leading-relaxed mb-6">FI2E contribue à la construction du nouveau siège national de la BEAC à Yaoundé par la fabrication et l'installation des systèmes de gaines de climatisation et de ventilation, depuis l'atelier de fabrication temporaire installé sur site jusqu'à la pose des gaines dans les locaux techniques.</p>
+      <div class="grid grid-cols-2 gap-6 mb-6">
+        <div><p class="text-xs text-steel-400 uppercase tracking-wide mb-1">Technologies</p><p class="text-sm font-semibold text-navy-900 dark:text-white">Gaines de climatisation & ventilation</p></div>
+        <div><p class="text-xs text-steel-400 uppercase tracking-wide mb-1">Intervention</p><p class="text-sm font-semibold text-navy-900 dark:text-white">Fabrication et installation sur site</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Groupes frigorifiques -->
+<section id="groupes-frigorifiques" class="py-24 bg-steel-50 dark:bg-navy-900 scroll-mt-24">
+  <div class="max-w-7xl mx-auto px-6 lg:px-10 grid lg:grid-cols-2 gap-16 items-center">
+    <div class="order-2 lg:order-1" data-aos="fade-left">
+      <div class="flex flex-wrap gap-2 mb-5">
+        <span class="px-3 py-1 rounded-full bg-electric-50 dark:bg-navy-800 text-electric-600 dark:text-cyan-400 text-xs font-semibold">HVAC</span>
+        <span class="px-3 py-1 rounded-full bg-electric-50 dark:bg-navy-800 text-electric-600 dark:text-cyan-400 text-xs font-semibold">Climatisation industrielle</span>
+      </div>
+      <h2 class="font-heading font-bold text-4xl text-navy-900 dark:text-white mb-4">Installations de groupes frigorifiques</h2>
+      <p class="text-steel-500 text-sm mb-6 flex items-center gap-2"><svg class="w-4 h-4 text-electric-500 dark:text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M17.657 16.657L13.414 20.9a2 2 0 01-2.828 0l-4.243-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>Cameroun</p>
+      <p class="text-steel-600 dark:text-steel-300 leading-relaxed mb-6">Levage et mise en place de groupes frigorifiques (chillers) en toiture technique, une opération délicate menée par nos équipes avec les moyens de levage adaptés, jusqu'au raccordement complet des installations.</p>
+      <div class="grid grid-cols-2 gap-6">
+        <div><p class="text-xs text-steel-400 uppercase tracking-wide mb-1">Technologies</p><p class="text-sm font-semibold text-navy-900 dark:text-white">Groupes frigorifiques, réseaux d'eau glacée</p></div>
+        <div><p class="text-xs text-steel-400 uppercase tracking-wide mb-1">Intervention</p><p class="text-sm font-semibold text-navy-900 dark:text-white">Levage, installation, raccordement</p></div>
+      </div>
+    </div>
+    <div class="order-1 lg:order-2 rounded-3xl overflow-hidden shadow-premium-lg aspect-[4/3]" data-aos="fade-right"><img src="assets/img/hvac-crane-lift-douala.jpg" class="w-full h-full object-cover" alt="Levage d'un groupe frigorifique à Douala"></div>
+  </div>
+</section>
+
+<!-- Atelier de fabrication -->
+<section id="atelier" class="py-24 bg-white dark:bg-navy-950 scroll-mt-24">
+  <div class="max-w-7xl mx-auto px-6 lg:px-10 grid lg:grid-cols-2 gap-16 items-center">
+    <div class="rounded-3xl overflow-hidden shadow-premium-lg aspect-[4/3]" data-aos="fade-right"><img src="assets/img/fabrication-workshop.jpg" class="w-full h-full object-cover" alt="Atelier de fabrication temporaire sur site"></div>
+    <div data-aos="fade-left">
+      <div class="flex flex-wrap gap-2 mb-5">
+        <span class="px-3 py-1 rounded-full bg-electric-50 dark:bg-navy-800 text-electric-600 dark:text-cyan-400 text-xs font-semibold">Fabrication</span>
+        <span class="px-3 py-1 rounded-full bg-electric-50 dark:bg-navy-800 text-electric-600 dark:text-cyan-400 text-xs font-semibold">Chaudronnerie</span>
+      </div>
+      <h2 class="font-heading font-bold text-4xl text-navy-900 dark:text-white mb-4">Atelier de fabrication sur site</h2>
+      <p class="text-steel-500 text-sm mb-6 flex items-center gap-2"><svg class="w-4 h-4 text-electric-500 dark:text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M17.657 16.657L13.414 20.9a2 2 0 01-2.828 0l-4.243-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>Cameroun</p>
+      <p class="text-steel-600 dark:text-steel-300 leading-relaxed mb-6">Pour certains chantiers d'envergure, FI2E installe un atelier de fabrication temporaire directement sur site : découpe et façonnage des gaines et kits méchano-soudés au plus près du lieu d'installation, pour un contrôle qualité optimal et des délais maîtrisés.</p>
+      <div class="grid grid-cols-2 gap-6">
+        <div><p class="text-xs text-steel-400 uppercase tracking-wide mb-1">Technologies</p><p class="text-sm font-semibold text-navy-900 dark:text-white">Gaines ventilation, kits méchano-soudés</p></div>
+        <div><p class="text-xs text-steel-400 uppercase tracking-wide mb-1">Intervention</p><p class="text-sm font-semibold text-navy-900 dark:text-white">Fabrication haute précision sur site</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Installation gaines ventilation -->
+<section id="ventilation" class="py-24 bg-steel-50 dark:bg-navy-900 scroll-mt-24">
+  <div class="max-w-7xl mx-auto px-6 lg:px-10 grid lg:grid-cols-2 gap-16 items-center">
+    <div class="order-2 lg:order-1" data-aos="fade-left">
+      <div class="flex flex-wrap gap-2 mb-5">
+        <span class="px-3 py-1 rounded-full bg-electric-50 dark:bg-navy-800 text-electric-600 dark:text-cyan-400 text-xs font-semibold">Industrie</span>
+        <span class="px-3 py-1 rounded-full bg-electric-50 dark:bg-navy-800 text-electric-600 dark:text-cyan-400 text-xs font-semibold">Ventilation</span>
+      </div>
+      <h2 class="font-heading font-bold text-4xl text-navy-900 dark:text-white mb-4">Installation de gaines de ventilation</h2>
+      <p class="text-steel-500 text-sm mb-6 flex items-center gap-2"><svg class="w-4 h-4 text-electric-500 dark:text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M17.657 16.657L13.414 20.9a2 2 0 01-2.828 0l-4.243-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>Cameroun</p>
+      <p class="text-steel-600 dark:text-steel-300 leading-relaxed mb-6">Pose de réseaux de gaines de ventilation isolées en local technique, avec suspentes, calorifugeage et raccordements aux centrales de traitement d'air — un savoir-faire clé de notre pôle Fabrication & Installation.</p>
+      <div class="grid grid-cols-2 gap-6">
+        <div><p class="text-xs text-steel-400 uppercase tracking-wide mb-1">Technologies</p><p class="text-sm font-semibold text-navy-900 dark:text-white">Gaines isolées, calorifugeage</p></div>
+        <div><p class="text-xs text-steel-400 uppercase tracking-wide mb-1">Intervention</p><p class="text-sm font-semibold text-navy-900 dark:text-white">Installation haute précision</p></div>
+      </div>
+    </div>
+    <div class="order-1 lg:order-2 rounded-3xl overflow-hidden shadow-premium-lg aspect-[4/3]" data-aos="fade-right"><img src="assets/img/hvac-duct-insulation-install.jpg" class="w-full h-full object-cover" alt="Installation de gaines de ventilation isolées"></div>
+  </div>
+</section>
+
+<!-- Processus détaillé -->
+<section class="py-28 bg-navy-950 relative overflow-hidden">
+  <div class="absolute inset-0 hero-grid opacity-40"></div>
+  <div class="relative max-w-5xl mx-auto px-6 lg:px-10">
+    <div class="text-center max-w-2xl mx-auto mb-16" data-aos="fade-up">
+      <p class="section-eyebrow text-cyan-400 font-semibold text-xs uppercase mb-4">Comment nous travaillons</p>
+      <h2 class="font-heading font-bold text-4xl lg:text-5xl text-white">De l'étude au support, un processus maîtrisé</h2>
+    </div>
+    <div class="relative">
+      <div class="absolute left-6 top-0 bottom-0 w-px timeline-line"></div>
+      <div class="space-y-10">
+        <div class="relative pl-16" data-aos="fade-up"><div class="absolute left-6 top-1 w-4 h-4 rounded-full bg-gradient-to-br from-electric-500 to-cyan-400 -translate-x-1/2 shadow-glow"></div><h3 class="font-heading font-semibold text-white text-lg">1. Étude</h3><p class="text-steel-400 text-sm mt-1">Analyse des besoins, contraintes du site et objectifs de performance.</p></div>
+        <div class="relative pl-16" data-aos="fade-up"><div class="absolute left-6 top-1 w-4 h-4 rounded-full bg-gradient-to-br from-electric-500 to-cyan-400 -translate-x-1/2 shadow-glow"></div><h3 class="font-heading font-semibold text-white text-lg">2. Conception</h3><p class="text-steel-400 text-sm mt-1">Dimensionnement technique, modélisation BIM et validation des plans.</p></div>
+        <div class="relative pl-16" data-aos="fade-up"><div class="absolute left-6 top-1 w-4 h-4 rounded-full bg-gradient-to-br from-electric-500 to-cyan-400 -translate-x-1/2 shadow-glow"></div><h3 class="font-heading font-semibold text-white text-lg">3. Simulation</h3><p class="text-steel-400 text-sm mt-1">Simulation thermique/fluidique pour valider les performances attendues.</p></div>
+        <div class="relative pl-16" data-aos="fade-up"><div class="absolute left-6 top-1 w-4 h-4 rounded-full bg-gradient-to-br from-electric-500 to-cyan-400 -translate-x-1/2 shadow-glow"></div><h3 class="font-heading font-semibold text-white text-lg">4. Fabrication</h3><p class="text-steel-400 text-sm mt-1">Fabrication d'armoires électriques et préparation des équipements.</p></div>
+        <div class="relative pl-16" data-aos="fade-up"><div class="absolute left-6 top-1 w-4 h-4 rounded-full bg-gradient-to-br from-electric-500 to-cyan-400 -translate-x-1/2 shadow-glow"></div><h3 class="font-heading font-semibold text-white text-lg">5. Installation</h3><p class="text-steel-400 text-sm mt-1">Mise en œuvre sur site par nos équipes techniques certifiées.</p></div>
+        <div class="relative pl-16" data-aos="fade-up"><div class="absolute left-6 top-1 w-4 h-4 rounded-full bg-gradient-to-br from-electric-500 to-cyan-400 -translate-x-1/2 shadow-glow"></div><h3 class="font-heading font-semibold text-white text-lg">6. Tests</h3><p class="text-steel-400 text-sm mt-1">Tests de mise en service et validation des performances réelles.</p></div>
+        <div class="relative pl-16" data-aos="fade-up"><div class="absolute left-6 top-1 w-4 h-4 rounded-full bg-gradient-to-br from-electric-500 to-cyan-400 -translate-x-1/2 shadow-glow"></div><h3 class="font-heading font-semibold text-white text-lg">7. Maintenance</h3><p class="text-steel-400 text-sm mt-1">Contrats de maintenance préventive pour garantir la fiabilité durable.</p></div>
+        <div class="relative pl-16" data-aos="fade-up"><div class="absolute left-6 top-1 w-4 h-4 rounded-full bg-gradient-to-br from-electric-500 to-cyan-400 -translate-x-1/2 shadow-glow pulse-ring"></div><h3 class="font-heading font-semibold text-white text-lg">8. Support</h3><p class="text-steel-400 text-sm mt-1">Assistance technique continue et interlocuteur dédié.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="py-24 bg-white dark:bg-navy-950">
+  <div class="max-w-4xl mx-auto px-6 lg:px-10 text-center" data-aos="zoom-in">
+    <h2 class="font-heading font-bold text-4xl text-navy-900 dark:text-white mb-6">Votre projet mérite la même rigueur</h2>
+    <a href="contact.html" class="btn-primary inline-flex items-center gap-2 text-white font-semibold px-8 py-4 rounded-full">Discuter de mon projet</a>
+  </div>
+</section>
+</main>
+
+<footer class="bg-navy-950 pt-20 pb-8 border-t border-white/5">
+  <div class="max-w-7xl mx-auto px-6 lg:px-10">
+    <div class="grid lg:grid-cols-12 gap-12 pb-16">
+      <div class="lg:col-span-4">
+        <a href="index.html" class="flex items-center gap-3 mb-6">
+          <img src="assets/img/logo-fi2e.png" alt="FI2E" class="h-14 w-auto">
+        </a>
+        <p class="text-steel-400 text-sm leading-relaxed mb-6">Facility Integrated Engineering & Energy — Votre partenaire en solutions intégrées du bâtiment.</p>
+      </div>
+      <div class="lg:col-span-2">
+        <h4 class="font-heading font-semibold text-white mb-5">Navigation</h4>
+        <ul class="space-y-3 text-sm text-steel-400">
+          <li><a href="index.html" class="hover:text-cyan-400 transition-colors">Accueil</a></li>
+          <li><a href="entreprise.html" class="hover:text-cyan-400 transition-colors">Entreprise</a></li>
+          <li><a href="realisations.html" class="hover:text-cyan-400 transition-colors">Réalisations</a></li>
+          <li><a href="carrieres.html" class="hover:text-cyan-400 transition-colors">Carrières</a></li>
+        </ul>
+      </div>
+      <div class="lg:col-span-2">
+        <h4 class="font-heading font-semibold text-white mb-5">Expertises</h4>
+        <ul class="space-y-3 text-sm text-steel-400">
+          <li><a href="expertises.html#hvac" class="hover:text-cyan-400 transition-colors">HVAC</a></li>
+          <li><a href="expertises.html#electricite" class="hover:text-cyan-400 transition-colors">Électricité</a></li>
+          <li><a href="expertises.html#gtb" class="hover:text-cyan-400 transition-colors">GTB</a></li>
+        </ul>
+      </div>
+      <div class="lg:col-span-4">
+        <h4 class="font-heading font-semibold text-white mb-5">Contact</h4>
+        <div class="space-y-2 text-sm text-steel-400">
+          <p>Logpom, B.P. 10311, Douala — Cameroun</p>
+          <p>+237 699 05 54 75</p>
+          <p>f2iegroup@gmail.com</p>
+        </div>
+      </div>
+    </div>
+    <div class="pt-8 border-t border-white/5 flex flex-wrap justify-between items-center gap-4 text-xs text-steel-500">
+      <p>© <span data-year>2026</span> FI2E. Tous droits réservés.</p>
+      <div class="flex gap-6"><a href="#" class="hover:text-cyan-400 transition-colors">Mentions légales</a><a href="#" class="hover:text-cyan-400 transition-colors">Confidentialité</a></div>
+    </div>
+  </div>
+</footer>
+
+<button id="back-to-top" class="fixed bottom-8 right-8 z-40 w-12 h-12 rounded-full btn-primary text-white flex items-center justify-center opacity-0 pointer-events-none" aria-label="Retour en haut">
+  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7"/></svg>
+</button>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
+<script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
