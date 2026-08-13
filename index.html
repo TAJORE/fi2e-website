@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>FI2E — Facility Integrated Engineering & Energy | Solutions MEP & Bâtiments Intelligents</title>
 <meta name="description" content="FI2E conçoit, réalise et maintient des solutions intégrées du bâtiment (HVAC, électricité, plomberie, GTB, énergie) pour l'industrie, les banques et les infrastructures publiques au Cameroun et en Afrique Centrale.">
+<!-- @partial:head -->
 <link rel="icon" type="image/png" href="assets/img/logo-fi2e.png">
 
 <!-- Fonts -->
@@ -22,63 +23,80 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 
 <link rel="stylesheet" href="assets/css/style.css">
+<!-- @/partial:head -->
 </head>
 <body class="font-body antialiased bg-white text-navy-900 dark:bg-navy-950 dark:text-steel-100">
 
 <div id="page-loader"><div class="loader-mark"><img src="assets/img/logo-fi2e.png" alt="FI2E"></div></div>
 <div id="cursor-dot"></div><div id="cursor-ring"></div>
 
+<!-- @partial:nav -->
 <!-- =================== NAV =================== -->
 <header>
 <nav id="site-nav" class="fixed top-0 left-0 w-full z-50 py-5">
   <div class="max-w-7xl mx-auto px-6 lg:px-10 flex items-center justify-between">
-    <a href="index.html" class="flex items-center gap-3 group">
+    <a href="index.html" class="flex items-center gap-3 group shrink-0">
       <img src="assets/img/logo-fi2e.png" alt="FI2E - Facility Integrated Engineering & Energy" class="h-14 w-auto group-hover:scale-105 transition-transform">
     </a>
 
-    <ul class="hidden lg:flex items-center gap-9 text-sm font-medium text-white/90">
-      <li><a href="index.html" class="nav-link active">Accueil</a></li>
-      <li><a href="entreprise.html" class="nav-link">Entreprise</a></li>
-      <li><a href="services.html" class="nav-link">Services</a></li>
+    <ul class="hidden xl:flex items-center gap-6 2xl:gap-8 text-sm font-medium text-white/90">
+      <li><a href="index.html" data-nav="index" class="nav-link active">Accueil</a></li>
+      <li><a href="entreprise.html" data-nav="entreprise" class="nav-link">Entreprise</a></li>
+      <li><a href="services.html" data-nav="services" class="nav-link">Services</a></li>
       <li class="nav-item relative">
-        <a href="expertises.html" class="nav-link flex items-center gap-1">Expertises
+        <a href="expertises.html" data-nav="expertises" class="nav-link flex items-center gap-1">Expertises
           <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
         </a>
         <div class="mega-panel absolute top-full left-1/2 -translate-x-1/2 pt-6 w-[640px]">
           <div class="glass dark:glass-dark rounded-2xl shadow-premium-lg p-6 grid grid-cols-2 gap-2">
             <a href="expertises.html#hvac" class="flex items-center gap-3 p-3 rounded-xl hover:bg-electric-50 dark:hover:bg-navy-800 transition-colors">
-              <span class="w-9 h-9 rounded-lg bg-electric-100 dark:bg-navy-700 flex items-center justify-center text-electric-600 dark:text-cyan-400"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M12 2v20M2 12h20M5 5l14 14M19 5L5 19"/></svg></span>
-              <div><p class="font-heading font-semibold text-sm text-navy-900 dark:text-white">HVAC & Climatisation</p><p class="text-xs text-steel-500">VRV / VRF, traitement d'air</p></div>
+              <span class="w-9 h-9 shrink-0 rounded-lg bg-electric-100 dark:bg-navy-700 flex items-center justify-center text-electric-600 dark:text-cyan-400"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M12 2v20M2 12h20M5 5l14 14M19 5L5 19"/></svg></span>
+              <div><p class="font-heading font-semibold text-sm text-navy-900 dark:text-white">HVAC &amp; Climatisation</p><p class="text-xs text-steel-500">VRV / VRF, traitement d'air</p></div>
             </a>
             <a href="expertises.html#electricite" class="flex items-center gap-3 p-3 rounded-xl hover:bg-electric-50 dark:hover:bg-navy-800 transition-colors">
-              <span class="w-9 h-9 rounded-lg bg-electric-100 dark:bg-navy-700 flex items-center justify-center text-electric-600 dark:text-cyan-400"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M13 2L4.5 13.5H11L10 22l9-13H12l1-7z"/></svg></span>
+              <span class="w-9 h-9 shrink-0 rounded-lg bg-electric-100 dark:bg-navy-700 flex items-center justify-center text-electric-600 dark:text-cyan-400"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M13 2L4.5 13.5H11L10 22l9-13H12l1-7z"/></svg></span>
               <div><p class="font-heading font-semibold text-sm text-navy-900 dark:text-white">Électricité industrielle</p><p class="text-xs text-steel-500">Armoires, distribution HT/BT</p></div>
             </a>
             <a href="expertises.html#gtb" class="flex items-center gap-3 p-3 rounded-xl hover:bg-electric-50 dark:hover:bg-navy-800 transition-colors">
-              <span class="w-9 h-9 rounded-lg bg-electric-100 dark:bg-navy-700 flex items-center justify-center text-electric-600 dark:text-cyan-400"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M9 3v18M15 3v18M3 9h18M3 15h18"/></svg></span>
-              <div><p class="font-heading font-semibold text-sm text-navy-900 dark:text-white">GTB / Smart Building</p><p class="text-xs text-steel-500">Automatisation & supervision</p></div>
+              <span class="w-9 h-9 shrink-0 rounded-lg bg-electric-100 dark:bg-navy-700 flex items-center justify-center text-electric-600 dark:text-cyan-400"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M9 3v18M15 3v18M3 9h18M3 15h18"/></svg></span>
+              <div><p class="font-heading font-semibold text-sm text-navy-900 dark:text-white">GTB / Smart Building</p><p class="text-xs text-steel-500">Automatisation &amp; supervision</p></div>
             </a>
             <a href="expertises.html#plomberie" class="flex items-center gap-3 p-3 rounded-xl hover:bg-electric-50 dark:hover:bg-navy-800 transition-colors">
-              <span class="w-9 h-9 rounded-lg bg-electric-100 dark:bg-navy-700 flex items-center justify-center text-electric-600 dark:text-cyan-400"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M12 2c3 4 6 7.5 6 11a6 6 0 11-12 0c0-3.5 3-7 6-11z"/></svg></span>
-              <div><p class="font-heading font-semibold text-sm text-navy-900 dark:text-white">Plomberie & Eau</p><p class="text-xs text-steel-500">Traitement, réseaux sanitaires</p></div>
+              <span class="w-9 h-9 shrink-0 rounded-lg bg-electric-100 dark:bg-navy-700 flex items-center justify-center text-electric-600 dark:text-cyan-400"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M12 2c3 4 6 7.5 6 11a6 6 0 11-12 0c0-3.5 3-7 6-11z"/></svg></span>
+              <div><p class="font-heading font-semibold text-sm text-navy-900 dark:text-white">Plomberie &amp; Eau</p><p class="text-xs text-steel-500">Traitement, réseaux sanitaires</p></div>
             </a>
             <a href="expertises.html#energie" class="flex items-center gap-3 p-3 rounded-xl hover:bg-electric-50 dark:hover:bg-navy-800 transition-colors">
-              <span class="w-9 h-9 rounded-lg bg-electric-100 dark:bg-navy-700 flex items-center justify-center text-electric-600 dark:text-cyan-400"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M12 3v3m0 12v3m9-9h-3M6 12H3m14.5-6.5l-2 2m-9 9l-2 2m0-13l2 2m9 9l2 2"/><circle cx="12" cy="12" r="4"/></svg></span>
-              <div><p class="font-heading font-semibold text-sm text-navy-900 dark:text-white">Énergie & Automatisation</p><p class="text-xs text-steel-500">Efficacité énergétique</p></div>
+              <span class="w-9 h-9 shrink-0 rounded-lg bg-electric-100 dark:bg-navy-700 flex items-center justify-center text-electric-600 dark:text-cyan-400"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M12 3v3m0 12v3m9-9h-3M6 12H3m14.5-6.5l-2 2m-9 9l-2 2m0-13l2 2m9 9l2 2"/><circle cx="12" cy="12" r="4"/></svg></span>
+              <div><p class="font-heading font-semibold text-sm text-navy-900 dark:text-white">Énergie &amp; Automatisation</p><p class="text-xs text-steel-500">Efficacité énergétique</p></div>
             </a>
             <a href="expertises.html#ingenierie" class="flex items-center gap-3 p-3 rounded-xl hover:bg-electric-50 dark:hover:bg-navy-800 transition-colors">
-              <span class="w-9 h-9 rounded-lg bg-electric-100 dark:bg-navy-700 flex items-center justify-center text-electric-600 dark:text-cyan-400"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M4 4h16v16H4z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M4 9h16M9 4v16"/></svg></span>
-              <div><p class="font-heading font-semibold text-sm text-navy-900 dark:text-white">Ingénierie & BIM</p><p class="text-xs text-steel-500">Études, conception, plans</p></div>
+              <span class="w-9 h-9 shrink-0 rounded-lg bg-electric-100 dark:bg-navy-700 flex items-center justify-center text-electric-600 dark:text-cyan-400"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M4 4h16v16H4z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M4 9h16M9 4v16"/></svg></span>
+              <div><p class="font-heading font-semibold text-sm text-navy-900 dark:text-white">Ingénierie &amp; BIM</p><p class="text-xs text-steel-500">Études, conception, plans</p></div>
             </a>
           </div>
         </div>
       </li>
-      <li><a href="realisations.html" class="nav-link">Réalisations</a></li>
-      <li><a href="projets.html" class="nav-link">Projets</a></li>
-      <li><a href="partenaires.html" class="nav-link">Partenaires</a></li>
-      <li><a href="carrieres.html" class="nav-link">Carrières</a></li>
-      <li><a href="blog.html" class="nav-link">Blog</a></li>
-      <li><a href="contact.html" class="nav-link">Contact</a></li>
+      <li class="nav-item relative">
+        <a href="realisations.html" data-nav="realisations" class="nav-link flex items-center gap-1">Réalisations
+          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </a>
+        <div class="mega-panel absolute top-full left-1/2 -translate-x-1/2 pt-6 w-[340px]">
+          <div class="glass dark:glass-dark rounded-2xl shadow-premium-lg p-4 grid gap-2">
+            <a href="realisations.html" class="flex items-center gap-3 p-3 rounded-xl hover:bg-electric-50 dark:hover:bg-navy-800 transition-colors">
+              <span class="w-9 h-9 shrink-0 rounded-lg bg-electric-100 dark:bg-navy-700 flex items-center justify-center text-electric-600 dark:text-cyan-400"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M4 4h7v7H4zM13 4h7v7h-7zM4 13h7v7H4zM13 13h7v7h-7z"/></svg></span>
+              <div><p class="font-heading font-semibold text-sm text-navy-900 dark:text-white">Portfolio complet</p><p class="text-xs text-steel-500">Toutes nos références par secteur</p></div>
+            </a>
+            <a href="projets.html" class="flex items-center gap-3 p-3 rounded-xl hover:bg-electric-50 dark:hover:bg-navy-800 transition-colors">
+              <span class="w-9 h-9 shrink-0 rounded-lg bg-electric-100 dark:bg-navy-700 flex items-center justify-center text-electric-600 dark:text-cyan-400"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M12 3l2.6 5.6 6.1.8-4.5 4.2 1.2 6-5.4-3-5.4 3 1.2-6L3.3 9.4l6.1-.8L12 3z"/></svg></span>
+              <div><p class="font-heading font-semibold text-sm text-navy-900 dark:text-white">Projets phares</p><p class="text-xs text-steel-500">BEAC, groupes frigorifiques…</p></div>
+            </a>
+          </div>
+        </div>
+      </li>
+      <li><a href="partenaires.html" data-nav="partenaires" class="nav-link">Partenaires</a></li>
+      <li><a href="carrieres.html" data-nav="carrieres" class="nav-link">Carrières</a></li>
+      <li><a href="blog.html" data-nav="blog" class="nav-link">Blog</a></li>
+      <li><a href="contact.html" data-nav="contact" class="nav-link">Contact</a></li>
     </ul>
 
     <div class="flex items-center gap-4">
@@ -89,7 +107,7 @@
         Demander un devis
         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
       </a>
-      <button id="menu-btn" class="lg:hidden text-white w-10 h-10 flex items-center justify-center">
+      <button id="menu-btn" class="xl:hidden text-white w-10 h-10 flex items-center justify-center">
         <svg id="icon-open" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
         <svg id="icon-close" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
       </button>
@@ -97,14 +115,14 @@
   </div>
 
   <!-- Mobile menu -->
-  <div id="mobile-menu" class="hidden lg:hidden fixed inset-0 top-0 bg-navy-950 z-40 pt-24 px-6 overflow-y-auto h-screen">
+  <div id="mobile-menu" class="hidden xl:hidden fixed inset-0 top-0 bg-navy-950 z-40 pt-24 px-6 overflow-y-auto h-screen">
     <ul class="flex flex-col gap-1 text-lg font-heading font-medium text-white">
       <li><a href="index.html" class="block py-3 border-b border-white/10">Accueil</a></li>
       <li><a href="entreprise.html" class="block py-3 border-b border-white/10">Entreprise</a></li>
       <li><a href="services.html" class="block py-3 border-b border-white/10">Services</a></li>
       <li><a href="expertises.html" class="block py-3 border-b border-white/10">Expertises</a></li>
       <li><a href="realisations.html" class="block py-3 border-b border-white/10">Réalisations</a></li>
-      <li><a href="projets.html" class="block py-3 border-b border-white/10">Projets</a></li>
+      <li><a href="projets.html" class="block py-2.5 pl-5 border-b border-white/10 text-base text-white/70">Projets phares</a></li>
       <li><a href="partenaires.html" class="block py-3 border-b border-white/10">Partenaires</a></li>
       <li><a href="carrieres.html" class="block py-3 border-b border-white/10">Carrières</a></li>
       <li><a href="blog.html" class="block py-3 border-b border-white/10">Blog</a></li>
@@ -114,6 +132,7 @@
   </div>
 </nav>
 </header>
+<!-- @/partial:nav -->
 
 <main>
 <!-- =================== HERO =================== -->
@@ -304,8 +323,8 @@
         <p class="text-xs text-steel-400 mt-2 uppercase tracking-wide">FCFA capital</p>
       </div>
       <div class="glass-dark rounded-2xl p-6 text-center" data-aos="fade-up" data-aos-delay="200">
-        <p class="font-heading font-extrabold text-4xl text-white counter">≈<span data-counter="3">0</span></p>
-        <p class="text-xs text-steel-400 mt-2 uppercase tracking-wide">Mds FCFA valorisation '25</p>
+        <p class="font-heading font-extrabold text-4xl text-white counter">≈<span data-counter="500">0</span></p>
+        <p class="text-xs text-steel-400 mt-2 uppercase tracking-wide">Millions FCFA valorisation '25</p>
       </div>
       <div class="glass-dark rounded-2xl p-6 text-center" data-aos="fade-up" data-aos-delay="300">
         <p class="font-heading font-extrabold text-4xl text-white counter"><span data-counter="25" data-suffix="+">0</span></p>
@@ -521,7 +540,7 @@
       <p class="section-eyebrow text-electric-600 dark:text-cyan-400 font-semibold text-xs uppercase mb-4">Notre méthodologie</p>
       <h2 class="font-heading font-bold text-4xl lg:text-5xl text-navy-900 dark:text-white">Un processus rigoureux, du concept au support</h2>
     </div>
-    <div class="relative grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-8">
+    <div class="relative grid grid-cols-3 md:grid-cols-3 lg:grid-cols-9 gap-8">
       <div class="hidden lg:block absolute top-6 left-0 w-full h-px timeline-line-h"></div>
       <div class="relative text-center" data-aos="fade-up" data-aos-delay="0">
         <div class="w-12 h-12 mx-auto rounded-full bg-white dark:bg-navy-950 border-2 border-electric-500 step-dot flex items-center justify-center font-heading font-bold text-electric-600 dark:text-cyan-400 mb-4 relative z-10">1</div>
@@ -549,10 +568,14 @@
       </div>
       <div class="relative text-center" data-aos="fade-up" data-aos-delay="300">
         <div class="w-12 h-12 mx-auto rounded-full bg-white dark:bg-navy-950 border-2 border-electric-500 step-dot flex items-center justify-center font-heading font-bold text-electric-600 dark:text-cyan-400 mb-4 relative z-10">7</div>
-        <h3 class="font-heading font-semibold text-sm text-navy-900 dark:text-white">Maintenance</h3>
+        <h3 class="font-heading font-semibold text-sm text-navy-900 dark:text-white">Mise en production</h3>
       </div>
       <div class="relative text-center" data-aos="fade-up" data-aos-delay="350">
-        <div class="w-12 h-12 mx-auto rounded-full bg-gradient-to-br from-electric-500 to-cyan-500 flex items-center justify-center font-heading font-bold text-white mb-4 relative z-10 shadow-glow">8</div>
+        <div class="w-12 h-12 mx-auto rounded-full bg-white dark:bg-navy-950 border-2 border-electric-500 step-dot flex items-center justify-center font-heading font-bold text-electric-600 dark:text-cyan-400 mb-4 relative z-10">8</div>
+        <h3 class="font-heading font-semibold text-sm text-navy-900 dark:text-white">Maintenance</h3>
+      </div>
+      <div class="relative text-center" data-aos="fade-up" data-aos-delay="400">
+        <div class="w-12 h-12 mx-auto rounded-full bg-gradient-to-br from-electric-500 to-cyan-500 flex items-center justify-center font-heading font-bold text-white mb-4 relative z-10 shadow-glow">9</div>
         <h3 class="font-heading font-semibold text-sm text-navy-900 dark:text-white">Support</h3>
       </div>
     </div>
@@ -730,6 +753,7 @@
 </main>
 
 <!-- =================== FOOTER =================== -->
+<!-- @partial:footer -->
 <footer class="bg-navy-950 pt-20 pb-8 border-t border-white/5">
   <div class="max-w-7xl mx-auto px-6 lg:px-10">
     <div class="grid lg:grid-cols-12 gap-12 pb-16">
@@ -737,7 +761,7 @@
         <a href="index.html" class="flex items-center gap-3 mb-6">
           <img src="assets/img/logo-fi2e.png" alt="FI2E" class="h-14 w-auto">
         </a>
-        <p class="text-steel-400 text-sm leading-relaxed mb-6">Facility Integrated Engineering & Energy — Votre partenaire en solutions intégrées du bâtiment : HVAC, électricité, plomberie, GTB et énergie.</p>
+        <p class="text-steel-400 text-sm leading-relaxed mb-6">Facility Integrated Engineering &amp; Energy — Votre partenaire en solutions intégrées du bâtiment : HVAC, électricité, plomberie, GTB et énergie.</p>
         <div class="flex gap-3">
           <a href="#" class="w-10 h-10 rounded-full border border-white/15 flex items-center justify-center text-steel-400 hover:text-white hover:border-cyan-400 transition-colors" aria-label="LinkedIn">
             <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.22 8.24h4.56V23H.22V8.24zM8.16 8.24h4.37v2.01h.06c.61-1.15 2.1-2.36 4.32-2.36 4.62 0 5.47 3.04 5.47 7v8.11h-4.56v-7.19c0-1.72-.03-3.93-2.4-3.93-2.4 0-2.77 1.88-2.77 3.81V23H8.16V8.24z"/></svg>
@@ -760,6 +784,7 @@
           <li><a href="index.html" class="hover:text-cyan-400 transition-colors">Accueil</a></li>
           <li><a href="entreprise.html" class="hover:text-cyan-400 transition-colors">Entreprise</a></li>
           <li><a href="realisations.html" class="hover:text-cyan-400 transition-colors">Réalisations</a></li>
+          <li><a href="projets.html" class="hover:text-cyan-400 transition-colors">Projets phares</a></li>
           <li><a href="carrieres.html" class="hover:text-cyan-400 transition-colors">Carrières</a></li>
           <li><a href="blog.html" class="hover:text-cyan-400 transition-colors">Blog</a></li>
         </ul>
@@ -768,11 +793,11 @@
       <div class="lg:col-span-2">
         <h4 class="font-heading font-semibold text-white mb-5">Services</h4>
         <ul class="space-y-3 text-sm text-steel-400">
-          <li><a href="expertises.html#hvac" class="hover:text-cyan-400 transition-colors">HVAC & Climatisation</a></li>
+          <li><a href="expertises.html#hvac" class="hover:text-cyan-400 transition-colors">HVAC &amp; Climatisation</a></li>
           <li><a href="expertises.html#electricite" class="hover:text-cyan-400 transition-colors">Électricité industrielle</a></li>
           <li><a href="expertises.html#gtb" class="hover:text-cyan-400 transition-colors">GTB / Smart Building</a></li>
-          <li><a href="expertises.html#plomberie" class="hover:text-cyan-400 transition-colors">Plomberie & Eau</a></li>
-          <li><a href="expertises.html#ingenierie" class="hover:text-cyan-400 transition-colors">Ingénierie & BIM</a></li>
+          <li><a href="expertises.html#plomberie" class="hover:text-cyan-400 transition-colors">Plomberie &amp; Eau</a></li>
+          <li><a href="expertises.html#ingenierie" class="hover:text-cyan-400 transition-colors">Ingénierie &amp; BIM</a></li>
         </ul>
       </div>
 
@@ -792,7 +817,7 @@
     </div>
 
     <div class="pt-8 border-t border-white/5 flex flex-wrap justify-between items-center gap-4 text-xs text-steel-500">
-      <p>© <span data-year>2026</span> FI2E — Facility Integrated Engineering & Energy. Tous droits réservés.</p>
+      <p>© <span data-year>2026</span> FI2E — Facility Integrated Engineering &amp; Energy. Tous droits réservés.</p>
       <div class="flex gap-6">
         <a href="#" class="hover:text-cyan-400 transition-colors">Mentions légales</a>
         <a href="#" class="hover:text-cyan-400 transition-colors">Politique de confidentialité</a>
@@ -804,12 +829,15 @@
 <button id="back-to-top" class="fixed bottom-8 right-8 z-40 w-12 h-12 rounded-full btn-primary text-white flex items-center justify-center opacity-0 pointer-events-none" aria-label="Retour en haut">
   <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7"/></svg>
 </button>
+<!-- @/partial:footer -->
 
 <!-- Scripts -->
+<!-- @partial:scripts -->
 <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 <script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
 <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="assets/js/main.js"></script>
+<!-- @/partial:scripts -->
 </body>
 </html>
